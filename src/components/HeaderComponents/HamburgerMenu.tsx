@@ -1,9 +1,8 @@
 import React from "react"
 import { Bars3Icon } from "@heroicons/react/24/outline"
+import loadable from '@loadable/component'
+const SideBarMenu = loadable(() => import('./SideBarMenu'))
 
-const SideBarMenu = React.lazy(() =>
-  import("./SideBarMenu")
-)
 
 const HamburgerMenu = () => {
   const [toggled, setToggled] = React.useState(false)

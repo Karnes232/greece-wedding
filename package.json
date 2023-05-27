@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@heroicons/react": "^2.0.18",
+    "@loadable/component": "^5.15.3",
     "framer-motion": "^10.12.16",
     "gatsby": "^5.10.0",
     "gatsby-omni-font-loader": "^2.0.2",
