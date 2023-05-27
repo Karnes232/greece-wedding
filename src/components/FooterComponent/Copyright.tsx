@@ -6,7 +6,7 @@ const Copyright = () => {
     <div className="mx-8 flex flex-col justify-between py-4 md:flex-row md:items-center md:mx-auto">
       <Link to="/">
         <p className="footerSitemap">
-          &copy; {new Date().getFullYear()} Adventure Fun Tours RD
+          &copy; {new Date().getFullYear()} Greece Weddings
         </p>
       </Link>
     </div>
