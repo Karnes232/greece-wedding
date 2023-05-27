@@ -3,13 +3,13 @@ import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar"
 import { Link } from "gatsby"
 
 const SideBarMenu = ({toggled, setToggled}) => {
-    const isSSR = typeof window === "undefined"
+ 
     
 
   return (
     <>
-      {!isSSR && (
-        <React.Suspense fallback={<div />}>
+    
+    
         <Sidebar
           backgroundColor="rgb(0, 0, 0, 0.9)"
           onBackdropClick={() => setToggled(false)}
@@ -31,9 +31,7 @@ const SideBarMenu = ({toggled, setToggled}) => {
             </MenuItem>
           </Menu>
         </Sidebar>
-        
-        </React.Suspense>
-      )}
+   
     </>
   )
 }
