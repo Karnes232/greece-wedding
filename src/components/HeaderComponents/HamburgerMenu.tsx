@@ -1,18 +1,24 @@
 import React from "react"
-
+import { Bars3Icon } from "@heroicons/react/24/outline"
 
 const SideBarMenu = React.lazy(() =>
   import("./SideBarMenu")
 )
 
 const HamburgerMenu = () => {
-  
+  const [toggled, setToggled] = React.useState(false)
  
   return (
     <>
       <div className="flex h-full lg:hidden">
-        <SideBarMenu/>
-        
+        <SideBarMenu toggled={toggled} setToggled={setToggled}/>
+        <main className="flex p-3">
+          <div>
+            <button className="sb-button" onClick={() => setToggled(!toggled)}>
+              <Bars3Icon className="h-6" />
+            </button>
+          </div>
+        </main>
       </div>
     </>
   )

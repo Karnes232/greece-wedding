@@ -1,10 +1,10 @@
 import React from 'react'
 import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar"
 import { Link } from "gatsby"
-import { Bars3Icon } from "@heroicons/react/24/outline"
-const SideBarMenu = () => {
+
+const SideBarMenu = ({toggled, setToggled}) => {
     const isSSR = typeof window === "undefined"
-    const [toggled, setToggled] = React.useState(false)
+    
 
   return (
     <>
@@ -31,13 +31,7 @@ const SideBarMenu = () => {
             </MenuItem>
           </Menu>
         </Sidebar>
-        <main className="flex p-3">
-          <div>
-            <button className="sb-button" onClick={() => setToggled(!toggled)}>
-              <Bars3Icon className="h-6" />
-            </button>
-          </div>
-        </main>
+        
         </React.Suspense>
       )}
     </>
