@@ -1,8 +1,8 @@
 import React, { useState } from "react"
-import 'react-phone-number-input/style.css'
-import PhoneInput from 'react-phone-number-input'
+import "react-phone-number-input/style.css"
+import PhoneInput from "react-phone-number-input"
 const ContactInfo = () => {
-    const [phoneValue, setPhoneValue] = useState()
+  const [phoneValue, setPhoneValue] = useState()
   return (
     <>
       <div className="relative z-0 mb-6 w-full group">
@@ -32,16 +32,16 @@ const ContactInfo = () => {
         </label>
       </div>
       <div className="relative z-0 mb-6 w-full group">
-      <PhoneInput
-      name="telephone"
-      defaultCountry="US"
-      placeholder="Enter phone number"
-      value={phoneValue}
-      onChange={setPhoneValue}
-      className="contactFormInput peer"
-      />
-        
-        
+        <PhoneInput
+          name="telephone"
+          defaultCountry="US"
+          international
+          countryCallingCodeEditable={false}
+          placeholder="Enter phone number"
+          value={phoneValue}
+          onChange={setPhoneValue}
+          className="contactFormInput peer"
+        />
       </div>
     </>
   )

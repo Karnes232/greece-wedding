@@ -15,7 +15,7 @@ const ContactForm = () => {
       >
         <input type="hidden" name="form-name" value="contact" />
         <ContactInfo />
-        <button type='submit'>Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </>
   )
