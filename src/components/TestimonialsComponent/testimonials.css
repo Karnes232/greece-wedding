@@ -1,0 +1,8 @@
+.quotation {
+  background-image: url("../../images/quotation-mark.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+  filter: brightness(0.75);
+}

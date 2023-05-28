@@ -24,7 +24,7 @@ const LinksComponent = ({ name, url, description, image, textColor }) => {
       </div>
 
       <p
-        className={`text-sm text-slate-500 font-extralight leading-6 font-serif mx-16 lg:mx-8 md:max-w-sm md:text-lg xl:mt-4`}
+        className={`text-sm text-secondary-color font-extralight leading-6 font-serif mx-16 lg:mx-8 md:max-w-sm md:text-lg xl:mt-4`}
       >
         {description}
       </p>

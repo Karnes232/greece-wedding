@@ -4,12 +4,14 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import IndexInformation from "../components/IndexInformationComponent/IndexInformation"
 import ServicesComponent from "../components/ServicesComponent/ServicesComponent"
+import Testimonials from "../components/TestimonialsComponent/Testimonials"
 
 const IndexPage = () => (
   <Layout>
     <SwiperCarousel />
     <IndexInformation />
     <ServicesComponent />
+    <Testimonials />
   </Layout>
 )
 

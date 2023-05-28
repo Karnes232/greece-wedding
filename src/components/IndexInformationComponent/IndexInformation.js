@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 const IndexInformation = () => {
   return (
-    <div className=" bg-slate-200 py-5 md:py-20 md:px-32">
+    <div className=" bg-primary-color py-5 md:py-20 md:px-32">
       <h1 className="text-lg mb-2 text-center font-extralight">
         UNPARALLELED, STRESS-FREE
       </h1>
