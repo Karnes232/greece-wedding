@@ -1,6 +1,6 @@
 import React from "react"
 import TextComponent from "../TextComponent/TextComponent"
-import IndividualTestimonal from "./IndividualTestimonal"
+import TestimonialCarousel from "./TestimonialCarousel"
 
 const Testimonials = () => {
   return (
@@ -10,8 +10,8 @@ const Testimonials = () => {
         <h1 className="text-lg lg:text-xl mb-2 text-center font-extralight text-secondary-color">
           TESTIMONIALS FROM OUR
         </h1>
-        <TextComponent title="HAPPY CLIENTS" className="lg:text-5xl" />
-        <IndividualTestimonal />
+        <TextComponent title="HAPPY CLIENTS" className="lg:text-5xl lg:mb-0" />
+        <TestimonialCarousel />
       </div>
     </div>
   )
