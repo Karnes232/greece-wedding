@@ -5,7 +5,7 @@ import SocialMedia from "./SocialMedia"
 
 const Footer = () => {
   return (
-    <footer className="border-b bg-gray-800 shadow-sm w-screen">
+    <footer className="border-b bg-black shadow-sm w-screen">
       <div className="mx-5 flex max-w-6xl flex-col justify-between xl:mx-auto">
         <SocialMedia />
         <Sitemap />

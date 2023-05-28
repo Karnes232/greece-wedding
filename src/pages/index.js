@@ -8,7 +8,7 @@ import Testimonials from "../components/TestimonialsComponent/Testimonials"
 
 const IndexPage = () => (
   <Layout>
-    <SwiperCarousel />
+    <SwiperCarousel cta={true} />
     <IndexInformation />
     <ServicesComponent />
     <Testimonials />
