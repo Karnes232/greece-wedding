@@ -6,9 +6,14 @@ import IndexInformation from "../components/IndexInformationComponent/IndexInfor
 import ServicesComponent from "../components/ServicesComponent/ServicesComponent"
 import Testimonials from "../components/TestimonialsComponent/Testimonials"
 
+import photo1 from "../images/wedding.jpg"
+import photo2 from "../images/wedding2.jpg"
+import photo3 from "../images/wedding3.jpg"
+const carouselPhotos = [photo1, photo2, photo3]
+
 const IndexPage = () => (
   <Layout>
-    <SwiperCarousel cta={true} />
+    <SwiperCarousel cta={true} photoList={carouselPhotos}/>
     <IndexInformation />
     <ServicesComponent />
     <Testimonials />

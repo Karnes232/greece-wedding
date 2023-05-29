@@ -7,13 +7,10 @@ import "swiper/css"
 import "swiper/css/effect-fade"
 import { Autoplay, EffectFade } from "swiper"
 import logo from "../../images/greeceLogo-white.png"
-import photo1 from "../../images/wedding.jpg"
-import photo2 from "../../images/wedding2.jpg"
-import photo3 from "../../images/wedding3.jpg"
+
 import { Link } from "gatsby"
-const SwiperCarousel = ({ cta }) => {
-  console.log(cta)
-  const carouselPhotos = [photo1, photo2, photo3]
+const SwiperCarousel = ({ cta, photoList }) => {
+
   return (
     <>
       <Swiper
@@ -26,7 +23,7 @@ const SwiperCarousel = ({ cta }) => {
         modules={[Autoplay, EffectFade]}
         className="mySwiper h-[35vh] md:h-[45vh] lg:h-[65vh] w-full mx-0"
       >
-        {carouselPhotos.map((image, index) => (
+        {photoList.map((image, index) => (
           <SwiperSlide className="relative" key={index}>
             <img
               src={image}
