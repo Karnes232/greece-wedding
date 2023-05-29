@@ -34,7 +34,6 @@ const ContactInfo = () => {
       <div className="relative z-0 mb-6 w-full group">
         <PhoneInput
           name="telephone"
-          defaultCountry="US"
           international
           countryCallingCodeEditable={false}
           placeholder="Enter phone number"
