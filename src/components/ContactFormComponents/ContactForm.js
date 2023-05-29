@@ -1,5 +1,8 @@
 import React from "react"
 import ContactInfo from "./ContactInfo"
+import EventInfo from "./EventInfo"
+import GuestCount from "./GuestCount"
+import MoreInfo from "./MoreInfo"
 
 const ContactForm = () => {
   return (
@@ -15,6 +18,9 @@ const ContactForm = () => {
       >
         <input type="hidden" name="form-name" value="contact" />
         <ContactInfo />
+        <EventInfo />
+        <GuestCount/>
+        <MoreInfo/> 
         <button type="submit">Submit</button>
       </form>
     </>
