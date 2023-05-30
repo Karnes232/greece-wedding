@@ -2,6 +2,8 @@ import React from "react"
 import Layout from "../../components/layout"
 import SwiperCarousel from "../../components/BackgroundCarousel/SwiperCarousel"
 import ContactForm from "../../components/ContactFormComponents/ContactForm"
+
+//Carousel Photos
 import photo2 from "../../images/wedding.jpg"
 import photo1 from "../../images/wedding2.jpg"
 import photo3 from "../../images/wedding3.jpg"
