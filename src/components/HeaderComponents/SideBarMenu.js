@@ -11,7 +11,7 @@ const SideBarMenu = ({ toggled, setToggled }) => {
         toggled={toggled}
         breakPoint="all"
       >
-        <Menu className="mt-10 ml-4">
+        <Menu className="pt-10 ml-4 h-[95vh] overflow-hidden">
           <MenuItem component={<Link to="/about" className="hamburger" />}>
             <p className="hamburger">About</p>
           </MenuItem>
@@ -25,6 +25,7 @@ const SideBarMenu = ({ toggled, setToggled }) => {
             <p className="hamburger">Contact</p>
           </MenuItem>
         </Menu>
+        <footer className="hamburger mx-4">Hello</footer>
       </Sidebar>
     </>
   )

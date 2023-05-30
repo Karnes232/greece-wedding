@@ -21,7 +21,7 @@ const ContactForm = () => {
         <EventInfo />
         <GuestCount/>
         <MoreInfo/> 
-        <button type="submit">Submit</button>
+        <button type="submit" className="w-32 lg:w-36 text-xs bg-black hover:opacity-75 text-white py-4 px-3 lg:py-5 lg:px-4 rounded-sm uppercase font-bold">Submit</button>
       </form>
     </>
   )
