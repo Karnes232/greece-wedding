@@ -8,7 +8,7 @@ const SocialMedia = ({ classes }) => {
     <div className={`${classes}`}>
       <div className="mx-8 flex justify-around py-4 md:mx-auto md:max-w-md">
         <a
-          href="https://www.facebook.com/adventurefuntoursdr"
+          href="https://www.facebook.com/profile.php?id=100092903240260"
           target="_blank"
           aria-label="Facebook"
           rel="noreferrer"
@@ -16,7 +16,7 @@ const SocialMedia = ({ classes }) => {
           <FaFacebookF className="footerIcons" />
         </a>
         <a
-          href="https://www.instagram.com/adventurefuntoursdr/"
+          href="https://instagram.com/greeceeventspc"
           target="_blank"
           aria-label="Instagram"
           rel="noreferrer"
