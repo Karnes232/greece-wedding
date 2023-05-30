@@ -1,5 +1,5 @@
 import React from "react"
-import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar"
+import { Sidebar, menuClasses, Menu, MenuItem, SubMenu } from "react-pro-sidebar"
 import { Link } from "gatsby"
 import SocialMedia from "../FooterComponent/SocialMedia"
 
@@ -18,9 +18,32 @@ const SideBarMenu = ({ toggled, setToggled }) => {
           <MenuItem component={<Link to="/about" className="hamburger" />}>
             <p className="hamburger">About</p>
           </MenuItem>
-          <MenuItem component={<Link to="/services" className="hamburger" />}>
-            <p className="hamburger">Services</p>
-          </MenuItem>
+          <SubMenu 
+            className="hamburger" 
+            label="Services" 
+            rootStyles={{
+              ['& > .' + menuClasses.button]: {
+                backgroundColor: 'rgb(0, 0, 0, 0.9)',
+                color: '#9f0099',
+                '&:hover': {
+                  backgroundColor: 'rgb(0, 0, 0, 0.9)!important',
+                },
+              },
+              ['.' + menuClasses.subMenuContent]: {
+                backgroundColor: 'rgb(0, 0, 0, 0.9)',
+              },
+            }}
+            >
+            <MenuItem component={<Link to="/services/weddings" className="hamburger" />}>
+              <p className="hamburger">Weddings</p>
+            </MenuItem> 
+            <MenuItem component={<Link to="/services/events" className="hamburger" />}>
+              <p className="hamburger">Events</p>
+            </MenuItem>
+            <MenuItem component={<Link to="/services/photos" className="hamburger" />}>
+              <p className="hamburger">Photos</p>
+            </MenuItem>
+          </SubMenu>
           <MenuItem component={<Link to="/gallery" className="hamburger" />}>
             <p className="hamburger">Gallery</p>
           </MenuItem>
