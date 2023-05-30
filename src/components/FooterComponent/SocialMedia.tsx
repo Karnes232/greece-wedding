@@ -3,9 +3,9 @@ import React from "react"
 import { FaFacebookF, FaInstagram } from "react-icons/fa"
 import { GrMail } from "react-icons/gr"
 
-const SocialMedia = () => {
+const SocialMedia = ({ classes }) => {
   return (
-    <div className="border-b border-gray-500 md:border-none">
+    <div className={`${classes}`}>
       <div className="mx-8 flex justify-around py-4 md:mx-auto md:max-w-md">
         <a
           href="https://www.facebook.com/adventurefuntoursdr"
