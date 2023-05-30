@@ -24,7 +24,7 @@ const SocialMedia = ({ classes }) => {
           <FaInstagram className="footerIcons" />
         </a>
         <a
-          href="mailto:adventurefuntours.dr@gmail.com"
+          href="mailto:greeceeventspc@gmail.com"
           aria-label="Gmail"
           rel="noreferrer"
         >
