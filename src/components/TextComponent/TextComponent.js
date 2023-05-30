@@ -1,6 +1,6 @@
 import React from "react"
 import { motion } from "framer-motion"
-const TextComponent = ({ title, paragraph, className }) => {
+const TextComponent = ({ title, paragraph, className, pClassName }) => {
   return (
     <div className="relative">
       <motion.div
@@ -17,7 +17,7 @@ const TextComponent = ({ title, paragraph, className }) => {
           {title}
         </h1>
         <p
-          className="font-serif lg:text-lg text-gray-700 lg:mt-5"
+          className={`font-serif lg:text-lg text-gray-700 lg:mt-5 ${pClassName}`}
           dangerouslySetInnerHTML={{ __html: paragraph }}
         ></p>
       </motion.div>
