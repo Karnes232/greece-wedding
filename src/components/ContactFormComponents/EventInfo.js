@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react"
 
 const EventInfo = () => {
   return (
     <>
-        <div className="relative z-0 mb-6 w-full group">
+      <div className="relative z-0 mb-6 w-full group">
         <input
           type="text"
           name="eventType"
@@ -29,7 +29,6 @@ const EventInfo = () => {
           Date
         </label>
       </div>
-      
     </>
   )
 }

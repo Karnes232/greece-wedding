@@ -10,7 +10,6 @@ import logo from "../../images/greeceLogo-white.png"
 
 import { Link } from "gatsby"
 const SwiperCarousel = ({ cta, photoList }) => {
-
   return (
     <>
       <Swiper

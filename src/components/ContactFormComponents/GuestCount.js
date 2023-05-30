@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 
 const GuestCount = () => {
   return (
@@ -14,18 +14,10 @@ const GuestCount = () => {
         id="tourSelect"
         className="contactFormInput peer"
       >
-        <option value='0-10'>
-            0-10 Guests
-        </option>
-        <option value='10-25'>
-            10-25 Guests
-        </option>
-        <option value='25-50'>
-            25-50 Guests
-        </option>
-        <option value='50-75'>
-            50-75 Guests
-        </option>
+        <option value="0-10">0-10 Guests</option>
+        <option value="10-25">10-25 Guests</option>
+        <option value="25-50">25-50 Guests</option>
+        <option value="50-75">50-75 Guests</option>
       </select>
     </div>
   )

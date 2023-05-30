@@ -13,7 +13,7 @@ const carouselPhotos = [photo1, photo2, photo3]
 
 const IndexPage = () => (
   <Layout>
-    <SwiperCarousel cta={true} photoList={carouselPhotos}/>
+    <SwiperCarousel cta={true} photoList={carouselPhotos} />
     <IndexInformation />
     <ServicesComponent />
     <Testimonials />
