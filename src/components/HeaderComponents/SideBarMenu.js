@@ -11,8 +11,10 @@ const SideBarMenu = ({ toggled, setToggled }) => {
         onBackdropClick={() => setToggled(false)}
         toggled={toggled}
         breakPoint="all"
+        
       >
-        <Menu className="pt-10 ml-4 h-[90vh] overflow-hidden">
+      <div className="flex flex-col py-10 h-full justify-between">
+        <Menu className="ml-4 overflow-hidden">
           <MenuItem component={<Link to="/about" className="hamburger" />}>
             <p className="hamburger">About</p>
           </MenuItem>
@@ -27,6 +29,7 @@ const SideBarMenu = ({ toggled, setToggled }) => {
           </MenuItem>
         </Menu>
         <footer className="hamburger mx-4"><SocialMedia/></footer>
+        </div>
       </Sidebar>
     </>
   )
