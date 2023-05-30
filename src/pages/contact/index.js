@@ -12,7 +12,7 @@ const index = () => {
     <Layout>
       <SwiperCarousel cta={false} photoList={carouselPhotos} />
       <main className="min-h-screen">
-        <div className="mt-5 text-center uppercase font-light">
+        <div className="mt-5 text-center md:text-lg lg:text-xl uppercase font-light">
           Send us a Message
         </div>
         <ContactForm />

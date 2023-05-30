@@ -1,11 +1,7 @@
 import React from "react"
 import LinksComponent from "./LinksComponent"
 
-import image1 from "../../images/wedding.jpg"
-import image2 from "../../images/wedding2.jpg"
-import image3 from "../../images/wedding3.jpg"
-
-const ServicesComponent = () => {
+const ServicesComponent = ({ image1, image2, image3 }) => {
   return (
     <div className="bg-white flex justify-center items-center">
       <div className="max-w-5xl my-10 md:my-20  flex flex-col lg:flex-row justify-center items-center">

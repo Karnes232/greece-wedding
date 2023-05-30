@@ -1,5 +1,5 @@
 import React from "react"
-
+import { motion } from "framer-motion"
 import { Link } from "gatsby"
 
 const LinksComponent = ({ name, url, description, image, textColor }) => {
@@ -8,7 +8,16 @@ const LinksComponent = ({ name, url, description, image, textColor }) => {
       to={url}
       className="no-underline flex flex-col items-center cursor-pointer text-center flex-[1_1_0px] min-h-[25rem]"
     >
-      <div className="flex flex-col justify-center items-center lg:h-64 xl:h-80 lg:justify-around">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 3,
+          delay: 0.3,
+        }}
+        className="flex flex-col justify-center items-center lg:h-64 xl:h-80 lg:justify-around"
+      >
         <h2
           className={`text-lg md:text-xl xl:text-2xl md:mb-2 uppercase ${textColor} font-semibold`}
         >
@@ -21,13 +30,20 @@ const LinksComponent = ({ name, url, description, image, textColor }) => {
             className="h-52 w-52 xl:h-60 xl:w-60 object-cover rounded-full hover:scale-125 hover:brightness-50 transition-all duration-300"
           />
         </div>
-      </div>
+      </motion.div>
 
-      <p
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 3,
+          delay: 0.3,
+        }}
         className={`text-sm text-secondary-color font-extralight leading-6 font-serif mx-16 lg:mx-8 md:max-w-sm md:text-lg xl:mt-4`}
       >
         {description}
-      </p>
+      </motion.p>
     </Link>
   )
 }
