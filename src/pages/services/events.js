@@ -9,6 +9,9 @@ import SwiperCarousel from "../../components/BackgroundCarousel/SwiperCarousel"
 //Service Description Image
 import image from "../../images/wedding2.jpg"
 import ServicesDescription from "../../components/ServiceDescriptionComponent/ServicesDescription"
+import ServicesList from "../../components/ServiceDescriptionComponent/ServicesList"
+import PreviousWork from "../../components/ServiceDescriptionComponent/PreviousWork"
+import previousEvents from "../../data/previousEvents"
 const events = () => {
   const carouselPhotos = [photo1, photo2, photo3]
   return (
@@ -20,7 +23,23 @@ const events = () => {
         paragraph3=""
         image={image}
       />
-      Events
+      <ServicesList
+        image={image}
+        listTitle="Types of Events"
+        list={[
+          "Meetings, seminars, speakers, training",
+          "Company announcements, product launches or releases, milestone celebrations",
+          "Team-building days, executive retreats",
+          "Conferences, trade shows, networking events",
+          "Fundraisers, auctions, charity events",
+          "Holiday parties, annual parties, employee appreciation",
+          "Anything else you need!",
+        ]}
+      />
+      <PreviousWork
+        serviceTitle="Events Planning"
+        PreviousWork={previousEvents}
+      />
     </Layout>
   )
 }

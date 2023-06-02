@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* rgb(100, 116, 139) */
 :root {
   --primary-color: rgb(239, 239, 239);
-  --secondary-color: rgb(100, 116, 139);
+  --secondary-color: rgb(109, 110, 113);
 }
