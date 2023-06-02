@@ -20,7 +20,7 @@ const events = () => {
         paragraph3=""
         image={image}
       />
-      <div className="min-h-screen"></div>
+      Events
     </Layout>
   )
 }

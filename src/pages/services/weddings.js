@@ -9,6 +9,7 @@ import SwiperCarousel from "../../components/BackgroundCarousel/SwiperCarousel"
 //Service Description Image
 import image from "../../images/wedding.jpg"
 import ServicesDescription from "../../components/ServiceDescriptionComponent/ServicesDescription"
+import ServicesList from "../../components/ServiceDescriptionComponent/ServicesList"
 
 const weddings = () => {
   const carouselPhotos = [photo1, photo2, photo3]
@@ -21,7 +22,20 @@ const weddings = () => {
         paragraph3="We care about the experience of planning your wedding from start to finish. So relax and have fun. Your Infinity event team will guide you every step of the way, ensuring your big day is effortless and unforgettable."
         image={image}
       />
-      I Got Weddings
+      <ServicesList image={image} listTitle="Wedding Services" 
+        list={[
+          "Ceremony & Reception Coordination",
+          "Rehearsal Dinner Coordination",
+          "Rentals & Vendor Coordination",
+          "Wedding Day Timeline",
+          "Floor Plan Design",
+          "Wedding Concept & Design",
+          "Budget Management",
+          "Security & Staffing",
+          "Tenting",
+          "Transportation & Parking"
+        ]}
+      />I Got Weddings
     </Layout>
   )
 }

@@ -20,6 +20,7 @@ const photos = () => {
         paragraph3="We care about the experience of planning your wedding from start to finish. So relax and have fun. Your Infinity event team will guide you every step of the way, ensuring your big day is effortless and unforgettable."
         image={image}
       />
+      Photos
     </Layout>
   )
 }
