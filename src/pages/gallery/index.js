@@ -12,23 +12,23 @@ import Slideshow from "yet-another-react-lightbox/plugins/slideshow"
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails"
 import Zoom from "yet-another-react-lightbox/plugins/zoom"
 import "yet-another-react-lightbox/plugins/thumbnails.css"
-import photos from "../../data/photos"
+import photoList from "../../data/photos"
 
 const Index = () => {
-  const [index, setIndex] = useState(-1);
-  console.log(photos)
+  const [index, setIndex] = useState(-1)
+
   return (
     <Layout>
-      <main className="">
+      <main className="p-2">
         <PhotoAlbum
-          photos={photos}
+          photos={photoList}
           layout="rows"
           targetRowHeight={150}
           onClick={({ index }) => setIndex(index)}
         />
 
         <Lightbox
-          slides={photos}
+          slides={photoList}
           open={index >= 0}
           index={index}
           close={() => setIndex(-1)}

@@ -1,49 +1,378 @@
-const breakpoints = [3840, 2400, 1080, 640, 384, 256, 128, 96, 64, 48];
+const photoList = [
+  {
+    src: "https://i.postimg.cc/X7Gp3GSh/wedding1.webp",
+    width: 1920,
+    height: 1280,
+    srcSet: [
+      {
+        src: "https://i.postimg.cc/X7Gp3GSh/wedding1.webp",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: "https://i.postimg.cc/65cwkBTS/wedding1.webp",
+        width: 640,
+        height: 427,
+      },
+    ],
+  },
+  {
+    src: "https://i.postimg.cc/zB8gGJSh/wedding10.webp",
+    width: 1920,
+    height: 1280,
+    srcSet: [
+      {
+        src: "https://i.postimg.cc/zB8gGJSh/wedding10.webp",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: "https://i.postimg.cc/k42B4BRB/wedding10.webp",
+        width: 640,
+        height: 427,
+      },
+    ],
+  },
+  {
+    src: "https://i.postimg.cc/8kwhsrYz/wedding11.webp",
+    width: 1920,
+    height: 1280,
+    srcSet: [
+      {
+        src: "https://i.postimg.cc/8kwhsrYz/wedding11.webp",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: "https://i.postimg.cc/Gp5mZdgr/wedding11.webp",
+        width: 640,
+        height: 427,
+      },
+    ],
+  },
+  {
+    src: "https://i.postimg.cc/6QsZFV8Y/wedding12.webp",
+    height: 1920,
+    width: 1280,
+    srcSet: [
+      {
+        src: "https://i.postimg.cc/6QsZFV8Y/wedding12.webp",
+        height: 1920,
+        width: 1280,
+      },
+      {
+        src: "https://i.postimg.cc/6QsZFV8Y/wedding12.webp",
+        height: 427,
+        width: 640,
+      },
+    ],
+  },
+  {
+    src: "https://i.postimg.cc/c4r8HkYF/wedding13.webp",
+    width: 1920,
+    height: 1280,
+    srcSet: [
+      {
+        src: "https://i.postimg.cc/c4r8HkYF/wedding13.webp",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: "https://i.postimg.cc/sgffxvts/wedding13.webp",
+        width: 640,
+        height: 427,
+      },
+    ],
+  },
+  {
+    src: "https://i.postimg.cc/4dQp6KNw/wedding14.webp",
+    height: 1920,
+    width: 1280,
+    srcSet: [
+      {
+        src: "https://i.postimg.cc/4dQp6KNw/wedding14.webp",
+        height: 1920,
+        width: 1280,
+      },
+      {
+        src: "https://i.postimg.cc/fTckJ4yj/wedding14.webp",
+        height: 427,
+        width: 640,
+      },
+    ],
+  },
+  {
+    src: "https://i.postimg.cc/K83L9p81/wedding15.webp",
+    height: 1920,
+    width: 1280,
+    srcSet: [
+      {
+        src: "https://i.postimg.cc/K83L9p81/wedding15.webp",
+        height: 1920,
+        width: 1280,
+      },
+      {
+        src: "https://i.postimg.cc/C5D5GXN0/wedding15.webp",
+        height: 427,
+        width: 640,
+      },
+    ],
+  },
+  {
+    src: "https://i.postimg.cc/zXcKFY8m/wedding16.webp",
+    height: 1920,
+    width: 1280,
+    srcSet: [
+      {
+        src: "https://i.postimg.cc/zXcKFY8m/wedding16.webp",
+        height: 1920,
+        width: 1280,
+      },
+      {
+        src: "https://i.postimg.cc/cHP680fT/wedding16.webp",
+        height: 427,
+        width: 640,
+      },
+    ],
+  },
+  {
+    src: "https://i.postimg.cc/XY5GKZsF/wedding17.webp",
+    height: 1920,
+    width: 1280,
+    srcSet: [
+      {
+        src: "https://i.postimg.cc/XY5GKZsF/wedding17.webp",
+        height: 1920,
+        width: 1280,
+      },
+      {
+        src: "https://i.postimg.cc/X7k7nw1s/wedding17.webp",
+        height: 427,
+        width: 640,
+      },
+    ],
+  },
+  {
+    src: "https://i.postimg.cc/rsY0j56G/wedding18.webp",
+    width: 1920,
+    height: 1280,
+    srcSet: [
+      {
+        src: "https://i.postimg.cc/rsY0j56G/wedding18.webp",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: "https://i.postimg.cc/0Nb8Ghk4/wedding18.webp",
+        width: 640,
+        height: 427,
+      },
+    ],
+  },
+  {
+    src: "https://i.postimg.cc/nr5rBZ70/wedding19.webp",
+    width: 1920,
+    height: 1280,
+    srcSet: [
+      {
+        src: "https://i.postimg.cc/nr5rBZ70/wedding19.webp",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: "https://i.postimg.cc/7ZLDDj2L/wedding19.webp",
+        width: 640,
+        height: 427,
+      },
+    ],
+  },
+  {
+    src: "https://i.postimg.cc/qqggNgtN/wedding2.webp",
+    width: 1920,
+    height: 1280,
+    srcSet: [
+      {
+        src: "https://i.postimg.cc/qqggNgtN/wedding2.webp",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: "https://i.postimg.cc/vBxZykCn/wedding2.webp",
+        width: 640,
+        height: 427,
+      },
+    ],
+  },
+  {
+    src: "https://i.postimg.cc/BvG8mqzz/wedding20.webp",
+    width: 1920,
+    height: 1280,
+    srcSet: [
+      {
+        src: "https://i.postimg.cc/BvG8mqzz/wedding20.webp",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: "https://i.postimg.cc/zf6qxp3G/wedding20.webp",
+        width: 640,
+        height: 427,
+      },
+    ],
+  },
+  {
+    src: "https://i.postimg.cc/65g4GVft/wedding21.webp",
+    width: 1920,
+    height: 1280,
+    srcSet: [
+      {
+        src: "https://i.postimg.cc/65g4GVft/wedding21.webp",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: "https://i.postimg.cc/W19Nksvr/wedding21.webp",
+        width: 640,
+        height: 427,
+      },
+    ],
+  },
+  {
+    src: "https://i.postimg.cc/Twtp2nP8/wedding22.webp",
+    width: 1920,
+    height: 1280,
+    srcSet: [
+      {
+        src: "https://i.postimg.cc/Twtp2nP8/wedding22.webp",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: "https://i.postimg.cc/CLSSrRMk/wedding22.webp",
+        width: 640,
+        height: 427,
+      },
+    ],
+  },
+  {
+    src: "https://i.postimg.cc/DfY8tQDL/wedding3.webp",
+    width: 1920,
+    height: 1280,
+    srcSet: [
+      {
+        src: "https://i.postimg.cc/DfY8tQDL/wedding3.webp",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: "https://i.postimg.cc/NfcjhNDy/wedding3.webp",
+        width: 640,
+        height: 427,
+      },
+    ],
+  },
+  {
+    src: "https://i.postimg.cc/50gFHZnR/wedding4.webp",
+    width: 1920,
+    height: 1280,
+    srcSet: [
+      {
+        src: "https://i.postimg.cc/50gFHZnR/wedding4.webp",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: "https://i.postimg.cc/bY2ZfSj5/wedding4.webp",
+        width: 640,
+        height: 427,
+      },
+    ],
+  },
+  {
+    src: "https://i.postimg.cc/Qt8Frfhk/wedding5.webp",
+    width: 1920,
+    height: 1280,
+    srcSet: [
+      {
+        src: "https://i.postimg.cc/Qt8Frfhk/wedding5.webp",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: "https://i.postimg.cc/ydRst9SX/wedding5.webp",
+        width: 640,
+        height: 427,
+      },
+    ],
+  },
+  {
+    src: "https://i.postimg.cc/MZsQzJcc/wedding6.webp",
+    width: 1920,
+    height: 1280,
+    srcSet: [
+      {
+        src: "https://i.postimg.cc/MZsQzJcc/wedding6.webp",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: "https://i.postimg.cc/xjH14rvD/wedding6.webp",
+        width: 640,
+        height: 427,
+      },
+    ],
+  },
+  {
+    src: "https://i.postimg.cc/MHZVdWnw/wedding7.webp",
+    width: 1920,
+    height: 1280,
+    srcSet: [
+      {
+        src: "https://i.postimg.cc/MHZVdWnw/wedding7.webp",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        src: "https://i.postimg.cc/brXNwLjB/wedding7.webp",
+        width: 640,
+        height: 427,
+      },
+    ],
+  },
+  {
+    src: "https://i.postimg.cc/mkr178n2/wedding8.webp",
+    height: 1920,
+    width: 1280,
+    srcSet: [
+      {
+        src: "https://i.postimg.cc/mkr178n2/wedding8.webp",
+        height: 1920,
+        width: 1280,
+      },
+      {
+        src: "https://i.postimg.cc/MpzHBsjk/wedding8.webp",
+        height: 427,
+        width: 640,
+      },
+    ],
+  },
+  {
+    src: "https://i.postimg.cc/3wgGhyp7/wedding9.webp",
+    height: 1920,
+    width: 1280,
+    srcSet: [
+      {
+        src: "https://i.postimg.cc/3wgGhyp7/wedding9.webp",
+        height: 1920,
+        width: 1280,
+      },
+      {
+        src: "https://i.postimg.cc/gkFnzcz2/wedding9.webp",
+        height: 427,
+        width: 640,
+      },
+    ],
+  },
+]
 
-const unsplashLink = (id, width, height) =>
-    `https://source.unsplash.com/${id}/${width}x${height}`;
-
-const unsplashPhotos = [
-    { id: "8gVv6nxq6gY", width: 1080, height: 800 },
-    { id: "Dhmn6ete6g8", width: 1080, height: 1620 },
-    { id: "RkBTPqPEGDo", width: 1080, height: 720 },
-    { id: "Yizrl9N_eDA", width: 1080, height: 721 },
-    { id: "KG3TyFi0iTU", width: 1080, height: 1620 },
-    { id: "Jztmx9yqjBw", width: 1080, height: 607 },
-    { id: "-heLWtuAN3c", width: 1080, height: 608 },
-    { id: "xOigCUcFdA8", width: 1080, height: 720 },
-    { id: "1azAjl8FTnU", width: 1080, height: 1549 },
-    { id: "ALrCdq-ui_Q", width: 1080, height: 720 },
-    { id: "twukN12EN7c", width: 1080, height: 694 },
-    { id: "9UjEyzA6pP4", width: 1080, height: 1620 },
-    { id: "sEXGgun3ZiE", width: 1080, height: 720 },
-    { id: "S-cdwrx-YuQ", width: 1080, height: 1440 },
-    { id: "q-motCAvPBM", width: 1080, height: 1620 },
-    { id: "Xn4L310ztMU", width: 1080, height: 810 },
-    { id: "iMchCC-3_fE", width: 1080, height: 610 },
-    { id: "X48pUOPKf7A", width: 1080, height: 160 },
-    { id: "GbLS6YVXj0U", width: 1080, height: 810 },
-    { id: "9CRd1J1rEOM", width: 1080, height: 720 },
-    { id: "xKhtkhc9HbQ", width: 1080, height: 1440 },
-];
-
-const photos = unsplashPhotos.map((photo) => {
-    const width = breakpoints[0];
-    const height = (photo.height / photo.width) * width;
-
-    return {
-        src: unsplashLink(photo.id, width, height),
-        width,
-        height,
-        srcSet: breakpoints.map((breakpoint) => {
-            const height = Math.round((photo.height / photo.width) * breakpoint);
-            return {
-                src: unsplashLink(photo.id, breakpoint, height),
-                width: breakpoint,
-                height,
-            };
-        }),
-    };
-});
-
-export default photos;
+export default photoList
