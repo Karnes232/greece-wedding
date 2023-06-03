@@ -9,30 +9,26 @@ import { Autoplay, EffectFade } from "swiper"
 import logo from "../../images/greeceLogo-white.png"
 
 import { Link } from "gatsby"
-const SwiperCarousel = ({ cta, photoList, photoList2 }) => {
-  console.log(photoList2)
+const SwiperCarousel = ({ cta, photoList }) => {
   return (
     <>
       <Swiper
         effect={"fade"}
         loop={true}
-        // autoplay={{
-        //   delay: 3000,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
         modules={[Autoplay, EffectFade]}
         className="mySwiper h-[35vh] md:h-[45vh] lg:h-[65vh] w-full mx-0"
       >
-        {photoList2.map((image, index) => (
+        {photoList.map((image, index) => (
           <SwiperSlide className="relative" key={index}>
             <img
-              
+              src={image}
               className="h-[35vh] md:h-[45vh] lg:h-[65vh] object-cover w-full brightness-50"
               alt="Greece Weddings"
               loading="lazy"
-              srcSet={`${image.mobile} 300w, ${image.image} 768w, https://i.postimg.cc/xCxHqsKn/wedding37.webp 1280w `}
-              sizes="(max-width: 300px) 300px, (max-width: 768px) 768px, 1280px"
-              src={image.image}
             />
             <div
               className={`absolute top-1/2 left-[55%] lg:left-[52%] transform -translate-x-1/2 -translate-y-1/2 brightness-150 flex flex-col h-48 items-center ${

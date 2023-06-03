@@ -11,25 +11,11 @@ import ServicesDescription from "../../components/ServiceDescriptionComponent/Se
 import ServicesList from "../../components/ServiceDescriptionComponent/ServicesList"
 import PreviousWork from "../../components/ServiceDescriptionComponent/PreviousWork"
 import previousPhoto from "../../data/previousPhoto"
-const carouselPhotos2 = [
-  {
-    image: photo1,
-    mobile: photo2 
-  },
-  {
-    image: photo1,
-    mobile: photo2 
-  },
-  {
-    image: photo1,
-    mobile: photo1 
-  },
-]
 const photos = () => {
   const carouselPhotos = [photo1, photo2, photo3]
   return (
     <Layout>
-      <SwiperCarousel cta={false} photoList={carouselPhotos} photoList2={carouselPhotos2}/>
+      <SwiperCarousel cta={false} photoList={carouselPhotos} />
       <ServicesDescription
         paragraph1="Our team is here to make the day you've always dreamed of, the day you'll never forget."
         paragraph2="From the very beginning, we will create a custom proposal based on your wants and needs. Once booked, your Infinity event team will collaborate with you to build the foundation of your wedding, creating an inspiration board and floor plan based on your unique vision. From unique lighting to seating charts, with us customization is guaranteed."
