@@ -5,7 +5,8 @@ import ServicesDescription from "../../components/ServiceDescriptionComponent/Se
 import PreviousWork from "../../components/ServiceDescriptionComponent/PreviousWork"
 import previousEvents from "../../data/previousEvents"
 
-const ServicesDescriptionImage = "https://i.postimg.cc/nL1qfVrs/wedding36.webp"
+const ServicesDescriptionImage = "https://i.postimg.cc/QCyfQ5y5/setup8.webp"
+const aboutUsPhoto = 'https://i.postimg.cc/50PgJL1G/setup13.webp'
 //Photos for Carousel
 const carouselPhoto1 = "https://i.postimg.cc/BvG8mqzz/wedding20.webp"
 const carouselPhoto1Mobile = "https://i.postimg.cc/zf6qxp3G/wedding20.webp"
@@ -42,7 +43,7 @@ const index = () => {
         paragraph1="Ease the stress of planning your big day with our team by your side. From coordinating your entire wedding weekend and bringing your design ideas to life, Infinity will help you every step of the way."
         paragraph2="Bring your brand to life through your next event with Infinity. We’ll work with your company to coordinate and manage everything you need to wow your employees and guests, from meeting planning and on-site coordination to security and transportation needs."
         paragraph3="Getting engaged? Going all out for your next birthday? Infinity can help you throw the party of your dreams, turning your vision into a reality and coordinating everything you need from the design, event rentals, and even entertainment."
-        image={ServicesDescriptionImage}
+        image={aboutUsPhoto}
         rowDirection="md:flex-row-reverse"
         padding="md:pr-0 md:pl-16"
         backgroundColor="bg-primary-color"
