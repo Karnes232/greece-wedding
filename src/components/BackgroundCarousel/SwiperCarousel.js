@@ -25,8 +25,14 @@ const SwiperCarousel = ({ cta, photoList }) => {
         {photoList.map((image, index) => (
           <SwiperSlide className="relative" key={index}>
             <img
-              src={image}
-              className="h-[35vh] md:h-[45vh] lg:h-[65vh] object-cover w-full brightness-50"
+              src={image.image}
+              className="hidden md:block h-[35vh] md:h-[45vh] lg:h-[65vh] object-cover w-full brightness-50"
+              alt="Greece Weddings"
+              loading="lazy"
+            />
+            <img
+              src={image.mobile}
+              className="md:hidden h-[35vh] md:h-[45vh] lg:h-[65vh] object-cover w-full brightness-50"
               alt="Greece Weddings"
               loading="lazy"
             />
