@@ -18,6 +18,7 @@ const GuestCount = () => {
         <option value="10-25">10-25 Guests</option>
         <option value="25-50">25-50 Guests</option>
         <option value="50-75">50-75 Guests</option>
+        <option value="75+">75+ Guests</option>
       </select>
     </div>
   )

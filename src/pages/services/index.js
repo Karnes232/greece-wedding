@@ -2,12 +2,13 @@ import React from "react"
 import Layout from "../../components/layout"
 import SwiperCarousel from "../../components/BackgroundCarousel/SwiperCarousel"
 import ServicesComponent from "../../components/ServicesComponent/ServicesComponent"
+import ServiceInformation from "../../components/ServiceInformation/ServiceInformation"
 
 //Photos for Services Component
-import image1 from "../../images/wedding.jpg"
-import image2 from "../../images/wedding2.jpg"
-import image3 from "../../images/wedding3.jpg"
-import ServiceInformation from "../../components/ServiceInformation/ServiceInformation"
+const weddingPhoto = 'https://i.postimg.cc/k42B4BRB/wedding10.webp'
+const eventPhoto = 'https://i.postimg.cc/x1MKg3S3/wedding34.webp'
+const PhotoSession = 'https://i.postimg.cc/CLSSrRMk/wedding22.webp'
+
 
 //Photos for Carousel
 const carouselPhoto1 = "https://i.postimg.cc/HLS47sgq/wedding26.webp"
@@ -35,7 +36,7 @@ const index = () => {
   return (
     <Layout>
       <SwiperCarousel cta={false} photoList={carouselPhotos} />
-      <ServicesComponent image1={image1} image2={image2} image3={image3} />
+      <ServicesComponent image1={weddingPhoto} image2={eventPhoto} image3={PhotoSession} />
       <ServiceInformation />
     </Layout>
   )

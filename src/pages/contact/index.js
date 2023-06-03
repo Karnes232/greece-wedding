@@ -5,12 +5,12 @@ import ContactForm from "../../components/ContactFormComponents/ContactForm"
 
 
 //Photos for Carousel
-const carouselPhoto1 = "https://i.postimg.cc/HLS47sgq/wedding26.webp"
-const carouselPhoto1Mobile = 'https://i.postimg.cc/tgdNRtS4/wedding26.webp'
-const carouselPhoto2 = 'https://i.postimg.cc/MHZVdWnw/wedding7.webp'
-const carouselPhoto2Mobile = 'https://i.postimg.cc/brXNwLjB/wedding7.webp'
-const carouselPhoto3 = 'https://i.postimg.cc/50gFHZnR/wedding4.webp'
-const carouselPhoto3Mobile = 'https://i.postimg.cc/bY2ZfSj5/wedding4.webp'
+const carouselPhoto1 = "https://i.postimg.cc/BvG8mqzz/wedding20.webp"
+const carouselPhoto1Mobile = 'https://i.postimg.cc/zf6qxp3G/wedding20.webp'
+const carouselPhoto2 = 'https://i.postimg.cc/9X9ZcBD5/wedding35.webp'
+const carouselPhoto2Mobile = 'https://i.postimg.cc/GpRvfTLw/wedding35.webp'
+const carouselPhoto3 = 'https://i.postimg.cc/BvwHnY5s/wedding31.webp'
+const carouselPhoto3Mobile = 'https://i.postimg.cc/HWv4LL2X/wedding31.webp'
 
 const carouselPhotos = [
   {
