@@ -14,9 +14,23 @@ import PreviousWork from "../../components/ServiceDescriptionComponent/PreviousW
 import previousEvents from "../../data/previousEvents"
 const events = () => {
   const carouselPhotos = [photo1, photo2, photo3]
+  const carouselPhotos2 = [
+    {
+      image: photo1,
+      mobile: photo2 
+    },
+    {
+      image: photo1,
+      mobile: photo2 
+    },
+    {
+      image: photo1,
+      mobile: photo1 
+    },
+  ]
   return (
     <Layout>
-      <SwiperCarousel cta={false} photoList={carouselPhotos} />
+      <SwiperCarousel cta={false} photoList={carouselPhotos} photoList2={carouselPhotos2}/>
       <ServicesDescription
         paragraph1="The corporate world is fast-paced and full of details. When partnering with Infinity Hospitality, we take care of those details while creating a unique experience for your guests that coincides with your company’s vision. "
         paragraph2="Whether it’s attracting new customers, educating your employees, or celebrating company milestones, we’ll help you create and execute the event strategy you have in mind. Once booked, we will collaborate with you to build the foundation of your event, creating an inspiration board and floor plan based on your goals. Then from the production to design, your Infinity team will bring your brand to life through our high quality planning and management services, as well as day-of coordination."

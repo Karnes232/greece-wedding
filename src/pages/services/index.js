@@ -15,10 +15,24 @@ import image3 from "../../images/wedding3.jpg"
 import ServiceInformation from "../../components/ServiceInformation/ServiceInformation"
 
 const carouselPhotos = [photo1, photo2, photo3]
+const carouselPhotos2 = [
+  {
+    image: photo1,
+    mobile: photo2 
+  },
+  {
+    image: photo1,
+    mobile: photo2 
+  },
+  {
+    image: photo1,
+    mobile: photo1 
+  },
+]
 const index = () => {
   return (
     <Layout>
-      <SwiperCarousel cta={false} photoList={carouselPhotos} />
+      <SwiperCarousel cta={false} photoList={carouselPhotos} photoList2={carouselPhotos2}/>
       <ServicesComponent image1={image1} image2={image2} image3={image3} />
       <ServiceInformation />
     </Layout>
