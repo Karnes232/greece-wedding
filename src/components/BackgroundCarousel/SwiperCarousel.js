@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
 import "swiper/css/effect-fade"
 import { Autoplay, EffectFade } from "swiper"
-import logo from "../../images/greeceLogo-white.png"
+import logo from "../../images/greeceLogo-white-small.webp"
 
 import { Link } from "gatsby"
 const SwiperCarousel = ({ cta, photoList }) => {
