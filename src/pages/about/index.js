@@ -5,30 +5,10 @@ import ServicesDescription from "../../components/ServiceDescriptionComponent/Se
 import PreviousWork from "../../components/ServiceDescriptionComponent/PreviousWork"
 import previousEvents from "../../data/previousEvents"
 
-const ServicesDescriptionImage = "https://i.postimg.cc/QCyfQ5y5/setup8.webp"
-const aboutUsPhoto = 'https://i.postimg.cc/50PgJL1G/setup13.webp'
-//Photos for Carousel
-const carouselPhoto1 = "https://i.postimg.cc/BvG8mqzz/wedding20.webp"
-const carouselPhoto1Mobile = "https://i.postimg.cc/zf6qxp3G/wedding20.webp"
-const carouselPhoto2 = "https://i.postimg.cc/9X9ZcBD5/wedding35.webp"
-const carouselPhoto2Mobile = "https://i.postimg.cc/GpRvfTLw/wedding35.webp"
-const carouselPhoto3 = "https://i.postimg.cc/BvwHnY5s/wedding31.webp"
-const carouselPhoto3Mobile = "https://i.postimg.cc/HWv4LL2X/wedding31.webp"
 
-const carouselPhotos = [
-  {
-    image: carouselPhoto1,
-    mobile: carouselPhoto1Mobile,
-  },
-  {
-    image: carouselPhoto2,
-    mobile: carouselPhoto2Mobile,
-  },
-  {
-    image: carouselPhoto3,
-    mobile: carouselPhoto3Mobile,
-  },
-]
+
+import { carouselPhotos, ServicesDescriptionImage, aboutUsPhoto  } from "../../data/pages/aboutPhotos"
+
 const index = () => {
   return (
     <Layout>

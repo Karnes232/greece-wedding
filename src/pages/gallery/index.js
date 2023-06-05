@@ -12,7 +12,7 @@ import Slideshow from "yet-another-react-lightbox/plugins/slideshow"
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails"
 import Zoom from "yet-another-react-lightbox/plugins/zoom"
 import "yet-another-react-lightbox/plugins/thumbnails.css"
-import photoList from "../../data/photos"
+import photoList from "../../data/pages/galleryPhotos"
 
 const Index = () => {
   const [index, setIndex] = useState(-1)
