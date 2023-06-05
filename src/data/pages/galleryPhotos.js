@@ -1038,18 +1038,18 @@ const photoList = [
   },
   {
     src: "https://i.postimg.cc/Dm3X3wWH/setup4.webp",
-    width: 1920,
-    height: 1280,
+    width: 1280,
+    height: 1920,
     srcSet: [
       {
         src: "https://i.postimg.cc/Dm3X3wWH/setup4.webp",
-        width: 1920,
-        height: 1280,
+        width: 1280,
+        height: 1920,
       },
       {
         src: "https://i.postimg.cc/JzJpXscD/setup4.webp",
-        width: 640,
-        height: 427,
+        width: 427,
+        height: 640,
       },
     ],
   },

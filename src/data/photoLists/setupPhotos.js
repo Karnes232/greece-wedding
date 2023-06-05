@@ -323,23 +323,6 @@ const setupPhotoList = [
     ],
   },
   {
-    src: "https://i.postimg.cc/Dm3X3wWH/setup4.webp",
-    width: 1280,
-    height: 1920,
-    srcSet: [
-      {
-        src: "https://i.postimg.cc/Dm3X3wWH/setup4.webp",
-        width: 1280,
-        height: 1920,
-      },
-      {
-        src: "https://i.postimg.cc/JzJpXscD/setup4.webp",
-        width: 427,
-        height: 640,
-      },
-    ],
-  },
-  {
     src: "https://i.postimg.cc/V6Tt4RzY/setup5.webp",
     width: 1920,
     height: 1280,
