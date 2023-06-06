@@ -8,21 +8,21 @@ const ServicesComponent = ({ image1, image2, image3 }) => {
         <LinksComponent
           name="Weddings"
           url="/services/weddings"
-          description="With every last detail taken care of, we're here to ensure the day you've always dreamed of will be the day you'll never forget."
+          description="Create your perfect wedding in paradise. From intimate ceremonies to grand celebrations, We will craft a unforgettable moment tailored to your love story."
           image={image1}
           textColor="text-black"
         />
         <LinksComponent
           name="Events"
           url="/services/events"
-          description="Wow your guests with a unique corporate experience that aligns with your company's mission and elevates your brand."
+          description="Celebrate life's special moments with elegance and style. Our dedicated team designs and coordinates social events that exceed expectations, creating unforgettable experiences for you and your guests."
           image={image2}
           textColor="text-black"
         />
         <LinksComponent
           name="Photos"
           url="/services/photos"
-          description="Capture cherished moments with stunning photos that immortalize love, joy, and memories that last a lifetime."
+          description="Capture cherished memories in breathtaking frames. Our professional photographers skillfully curate photo sessions, transforming moments into timeless art that beautifully reflects your unique story."
           image={image3}
           textColor="text-black"
         />

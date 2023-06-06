@@ -7,15 +7,19 @@ import ServicesList from "../../components/ServiceDescriptionComponent/ServicesL
 import PreviousWork from "../../components/ServiceDescriptionComponent/PreviousWork"
 import previousEvents from "../../data/previousEvents"
 
-import { carouselPhotos, serviceDescriptionPhoto, serviceListPhoto } from "../../data/pages/eventsPhotos"
- 
+import {
+  carouselPhotos,
+  serviceDescriptionPhoto,
+  serviceListPhoto,
+} from "../../data/pages/eventsPhotos"
+
 const events = () => {
   return (
     <Layout>
       <SwiperCarousel cta={false} photoList={carouselPhotos} />
       <ServicesDescription
-        paragraph1="The corporate world is fast-paced and full of details. When partnering with Infinity Hospitality, we take care of those details while creating a unique experience for your guests that coincides with your company’s vision. "
-        paragraph2="Whether it’s attracting new customers, educating your employees, or celebrating company milestones, we’ll help you create and execute the event strategy you have in mind. Once booked, we will collaborate with you to build the foundation of your event, creating an inspiration board and floor plan based on your goals. Then from the production to design, your Infinity team will bring your brand to life through our high quality planning and management services, as well as day-of coordination."
+        paragraph1="We believe that every special occasion deserves to be celebrated in style. Whether you're hosting a milestone birthday party, an anniversary celebration, a family reunion, or any other social event, we are here to bring your vision to life in the enchanting destination of Punta Cana."
+        paragraph2="Punta Cana offers the perfect backdrop for your social event, with its stunning natural beauty, warm tropical climate, and luxurious venues. From intimate gatherings to extravagant soirées, our team of experienced event planners will work closely with you to understand your unique preferences, desires, and expectations. We will transform your vision into a reality, creating an unforgettable celebration that surpasses your wildest dreams."
         paragraph3=""
         image={serviceDescriptionPhoto}
       />

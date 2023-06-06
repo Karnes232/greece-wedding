@@ -4,7 +4,12 @@ import SwiperCarousel from "../../components/BackgroundCarousel/SwiperCarousel"
 import ServicesComponent from "../../components/ServicesComponent/ServicesComponent"
 import ServiceInformation from "../../components/ServiceInformation/ServiceInformation"
 
-import { carouselPhotos, weddingPhoto,  eventPhoto, PhotoSession } from "../../data/pages/servicePhotos"
+import {
+  carouselPhotos,
+  weddingPhoto,
+  eventPhoto,
+  PhotoSession,
+} from "../../data/pages/servicePhotos"
 
 const index = () => {
   return (

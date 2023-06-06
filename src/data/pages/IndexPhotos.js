@@ -23,4 +23,3 @@ export const carouselPhotos = [
 export const weddingPhoto = "https://i.postimg.cc/k42B4BRB/wedding10.webp"
 export const eventPhoto = "https://i.postimg.cc/x1MKg3S3/wedding34.webp"
 export const PhotoSession = "https://i.postimg.cc/CLSSrRMk/wedding22.webp"
-

@@ -5,24 +5,26 @@ import ServicesDescription from "../../components/ServiceDescriptionComponent/Se
 import PreviousWork from "../../components/ServiceDescriptionComponent/PreviousWork"
 import previousEvents from "../../data/previousEvents"
 
-
-
-import { carouselPhotos, ServicesDescriptionImage, aboutUsPhoto  } from "../../data/pages/aboutPhotos"
+import {
+  carouselPhotos,
+  ServicesDescriptionImage,
+  aboutUsPhoto,
+} from "../../data/pages/aboutPhotos"
 
 const index = () => {
   return (
     <Layout>
       <SwiperCarousel cta={false} photoList={carouselPhotos} />
       <ServicesDescription
-        paragraph1="Founded in 2011, Infinity Hospitality was created out of a love for dynamic events and fine dining. Our goal is to provide unparalleled event services and outstanding customer service"
-        paragraph2="Why Infinity? Because with us, there are infinite possibilities. Big or small, we are committed to creating one-of-a-kind events that your guests will remember for years to come. Customization is guaranteed, from your floor plan to your bar menu and signature lounge furniture."
-        paragraph3="We work with the best vendors in the Nashville area to provide planning and design services at the venue of your dreams, and we also offer full services at The Bridge Building Event Spaces, The Bell Tower, and The Estate at Cherokee Dock through exclusive venue management and in-house catering."
+        paragraph1="We believe that every special occasion deserves to be celebrated in a truly extraordinary way. Nestled in the picturesque paradise of Punta Cana, we are a premier event planning and photography company dedicated to crafting unforgettable weddings, social events, and photo sessions. With a team of passionate professionals and a deep appreciation for beauty and romance, we are committed to turning your dreams into reality."
+        paragraph2="Greece Weddings was founded with a vision to provide exceptional experiences and capture the magic of life's most precious moments. Drawing inspiration from the rich culture and scenic beauty of Greece, we sought to bring that same sense of enchantment and elegance to the tropical paradise of Punta Cana. With years of experience in the industry and a genuine love for creating joyous celebrations, our team has established a reputation for excellence and impeccable service."
+        paragraph3=""
         image={ServicesDescriptionImage}
       />
       <ServicesDescription
-        paragraph1="Ease the stress of planning your big day with our team by your side. From coordinating your entire wedding weekend and bringing your design ideas to life, Infinity will help you every step of the way."
-        paragraph2="Bring your brand to life through your next event with Infinity. We’ll work with your company to coordinate and manage everything you need to wow your employees and guests, from meeting planning and on-site coordination to security and transportation needs."
-        paragraph3="Getting engaged? Going all out for your next birthday? Infinity can help you throw the party of your dreams, turning your vision into a reality and coordinating everything you need from the design, event rentals, and even entertainment."
+        paragraph1="At Greece Weddings, we are committed to delivering excellence, personalized service, and unforgettable moments. We understand the significance of your special day and the trust you place in us to make it truly remarkable. From the moment you choose us as your partner, we will work tirelessly to ensure your experience is seamless, stress-free, and filled with joy and magic."
+        paragraph2="Whether you envision a romantic beach wedding, an intimate social gathering, or a captivating photo session, Greece Weddings is here to bring your dreams to life. Contact our dedicated team today to begin the journey of creating your unforgettable celebration in Punta Cana. Let us be a part of your story and help you create memories that will be treasured for a lifetime."
+        paragraph3=""
         image={aboutUsPhoto}
         rowDirection="md:flex-row-reverse"
         padding="md:pr-0 md:pl-16"

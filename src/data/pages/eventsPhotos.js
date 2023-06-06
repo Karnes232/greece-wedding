@@ -21,5 +21,6 @@ export const carouselPhotos = [
   },
 ]
 
-export const serviceDescriptionPhoto = 'https://i.postimg.cc/bY2ZfSj5/wedding4.webp'
-export const serviceListPhoto = 'https://i.postimg.cc/brXNwLjB/wedding7.webp'
+export const serviceDescriptionPhoto =
+  "https://i.postimg.cc/bY2ZfSj5/wedding4.webp"
+export const serviceListPhoto = "https://i.postimg.cc/brXNwLjB/wedding7.webp"

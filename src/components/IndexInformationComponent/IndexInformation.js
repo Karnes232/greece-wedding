@@ -5,20 +5,20 @@ import { Link } from "gatsby"
 const IndexInformation = () => {
   return (
     <div className=" bg-primary-color py-5 md:py-20 md:px-32">
-      <h1 className="text-lg mb-2 text-center font-extralight">
-        UNPARALLELED, STRESS-FREE
+      <h1 className="text-lg mb-2 mx-2 text-center font-extralight uppercase">
+        Experience Unforgettable Moments in Paradise
       </h1>
       <TextComponent
-        title="EVENT PLANNING & DESIGN"
-        paragraph="The Infinity experience is unlike any other. Our full-service event planning and design team will guide you every step of the way, ensuring a stress-free experience from start to finish."
+        title="Plan Your Perfect Celebration"
+        paragraph="Are you dreaming of a picturesque wedding or a memorable social event in the enchanting paradise of Punta Cana, Dominican Republic? Look no further than Greece Weddings, your trusted partner in creating extraordinary experiences."
+        className="uppercase"
+      />
+      <TextComponent
+        paragraph="We specialize in crafting exceptional weddings, social events, and photo sessions for tourists visiting Punta Cana. With our expertise and attention to detail, we ensure that every moment of your special occasion is filled with beauty, joy, and cherished memories."
         className=""
       />
       <TextComponent
-        paragraph="With us, customization is guaranteed. From the very beginning, we will create a custom proposal tailored to your specific wants and needs. You'll be paired with an Infinity Event Team who will collaborate with you to bring your vision to life. We will team up with some of the best vendors in Nashville and take care of all the details like meeting scheduling, delivery dates, payments, day-of setup, and more."
-        className=""
-      />
-      <TextComponent
-        paragraph="When it’s showtime, our staff will work tirelessly to guarantee your event is effortless and unforgettable."
+        paragraph="Begin your journey towards an extraordinary celebration by exploring our website and discovering our services. Take a look at our portfolio of stunning venues and browse through the remarkable moments we've captured for our clients. Contact us today to schedule a consultation, and let's start planning your dream wedding, social event, or photo session in beautiful Punta Cana."
         className=""
       />
       <div className="flex justify-center items-center">

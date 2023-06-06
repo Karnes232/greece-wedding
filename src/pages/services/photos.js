@@ -6,16 +6,20 @@ import ServicesList from "../../components/ServiceDescriptionComponent/ServicesL
 import PreviousWork from "../../components/ServiceDescriptionComponent/PreviousWork"
 import previousPhoto from "../../data/previousPhoto"
 
-import { carouselPhotos, serviceDescriptionPhoto, serviceListPhoto } from "../../data/pages/photoSessionPhotos"
+import {
+  carouselPhotos,
+  serviceDescriptionPhoto,
+  serviceListPhoto,
+} from "../../data/pages/photoSessionPhotos"
 
 const photos = () => {
   return (
     <Layout>
       <SwiperCarousel cta={false} photoList={carouselPhotos} />
       <ServicesDescription
-        paragraph1="Our team is here to make the day you've always dreamed of, the day you'll never forget."
-        paragraph2="From the very beginning, we will create a custom proposal based on your wants and needs. Once booked, your Infinity event team will collaborate with you to build the foundation of your wedding, creating an inspiration board and floor plan based on your unique vision. From unique lighting to seating charts, with us customization is guaranteed."
-        paragraph3="We care about the experience of planning your wedding from start to finish. So relax and have fun. Your Infinity event team will guide you every step of the way, ensuring your big day is effortless and unforgettable."
+        paragraph1="We understand the power of photography to preserve cherished moments and create timeless memories. Our expert photographers are passionate about capturing the beauty, joy, and love that surrounds special occasions. Whether you're looking for stunning engagement photos, family portraits, or vacation snapshots, our photo sessions in Punta Cana will exceed your expectations."
+        paragraph2="Punta Cana offers an abundance of breathtaking locations that serve as the perfect backdrop for your photo sessions. From pristine white-sand beaches and turquoise waters to lush tropical gardens and historic landmarks, the natural beauty of Punta Cana adds an unparalleled charm to your photographs. Our photographers are intimately familiar with the region, and they will guide you to the most scenic spots, ensuring that every frame captures the magic of your surroundings."
+        paragraph3=""
         image={serviceDescriptionPhoto}
       />
       <ServicesList
