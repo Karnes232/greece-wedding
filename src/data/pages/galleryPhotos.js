@@ -1,3 +1,5 @@
+import { newPhotoList } from "../photoLists/newPhotos"
+
 const photoList = [
   {
     src: "https://i.postimg.cc/X7Gp3GSh/wedding1.webp",
@@ -1138,6 +1140,6 @@ const photoList = [
       },
     ],
   },
-].sort(() => Math.random() - 0.5)
+].concat(newPhotoList).sort(() => Math.random() - 0.5)
 
 export default photoList
