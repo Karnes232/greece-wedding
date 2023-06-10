@@ -26,7 +26,7 @@ const TestimonialCarousel = () => {
               className="flex flex-col justify-center items-center max-w-lg xl:max-w-xl mx-auto text-center pb-8
     "
             >
-              <p className="text-secondary-color mb-5 xl:mb-8 h-60 md:h-48 flex items-center">
+              <p className="text-secondary-color mb-5 xl:mb-8 h-64 md:h-48 flex items-center">
                 {testimonial.review}
               </p>
 
