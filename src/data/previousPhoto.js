@@ -1,26 +1,27 @@
-import image from "../images/wedding.jpg"
-import image2 from "../images/wedding2.jpg"
-import image3 from "../images/wedding3.jpg"
+const image = "https://i.postimg.cc/PrFJQvxM/engagement.webp"
+const image2 = "https://i.postimg.cc/QtVxVd84/photo-Session.webp"
+const image3 = "https://i.postimg.cc/bYMCsY2n/77.webp"
 
 const previousPhoto = [
   {
-    image: image,
-    eventTitle: "ALEXA + CONOR’S ROMANTIC JUNE WEDDING",
+    image: image3,
+    eventTitle: "Isabella and Benjamin’S tropical beach wedding",
     description:
-      "A romantic wedding ceremony and reception with garden-inspired decor at the Bridge Building",
+      "A breathtaking beach wedding, where vows are exchanged amidst the coastal beauty and gentle sea breeze",
+  },
+  {
+    image: image,
+    eventTitle: "Mia and William’S Romantic Beach Engagement",
+    description:
+      "A romantic beach engagement, where love sparkles in the sand and waves embrace their promise",
   },
   {
     image: image2,
-    eventTitle: "GAGE + BRIAN’S ROMANTIC GARDEN-INSPIRED WEDDING",
+    eventTitle: "Smith's Family tropical vacation reunion",
     description:
-      "A romantic and modern June wedding with neutral decor and bright flower arrangements at The Bell Tower",
+      "A joyous tropical family reunion, filled with laughter, beach adventures, and cherished memories",
   },
-  {
-    image: image3,
-    eventTitle: "MACKENZIE + JACK’S TROPICAL SUMMER WEDDING",
-    description:
-      "A summer wedding with disco ball decor, tropical leaves, and pops of navy blue at The Cordelle",
-  },
+  
 ]
 
 export default previousPhoto
