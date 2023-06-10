@@ -1,8 +1,8 @@
 //Photos for Carousel
-const carouselPhoto1 = "https://i.postimg.cc/BvG8mqzz/wedding20.webp"
-const carouselPhoto1Mobile = "https://i.postimg.cc/zf6qxp3G/wedding20.webp"
-const carouselPhoto2 = "https://i.postimg.cc/9X9ZcBD5/wedding35.webp"
-const carouselPhoto2Mobile = "https://i.postimg.cc/GpRvfTLw/wedding35.webp"
+const carouselPhoto1 = "https://i.postimg.cc/9QjSX6vj/setup12.webp"
+const carouselPhoto1Mobile = "https://i.postimg.cc/7hfVZhZL/setup12.webp"
+const carouselPhoto2 = "https://i.postimg.cc/X74kmMwm/5.webp"
+const carouselPhoto2Mobile = "https://i.postimg.cc/5NDLJZvf/5.webp"
 const carouselPhoto3 = "https://i.postimg.cc/BvwHnY5s/wedding31.webp"
 const carouselPhoto3Mobile = "https://i.postimg.cc/HWv4LL2X/wedding31.webp"
 

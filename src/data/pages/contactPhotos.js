@@ -1,9 +1,9 @@
-const carouselPhoto1 = "https://i.postimg.cc/BvG8mqzz/wedding20.webp"
-const carouselPhoto1Mobile = "https://i.postimg.cc/zf6qxp3G/wedding20.webp"
-const carouselPhoto2 = "https://i.postimg.cc/9X9ZcBD5/wedding35.webp"
-const carouselPhoto2Mobile = "https://i.postimg.cc/GpRvfTLw/wedding35.webp"
-const carouselPhoto3 = "https://i.postimg.cc/BvwHnY5s/wedding31.webp"
-const carouselPhoto3Mobile = "https://i.postimg.cc/HWv4LL2X/wedding31.webp"
+const carouselPhoto1 = "https://i.postimg.cc/Nfbjtnn5/40.webp"
+const carouselPhoto1Mobile = "https://i.postimg.cc/T13Y5qLR/40.webp"
+const carouselPhoto2 = "https://i.postimg.cc/RFy7XsqG/wedding25.webp"
+const carouselPhoto2Mobile = "https://i.postimg.cc/t4xzwHFP/wedding25.webp"
+const carouselPhoto3 = "https://i.postimg.cc/zX0bXvQw/73.webp"
+const carouselPhoto3Mobile = "https://i.postimg.cc/nLkSzvvV/73.webp"
 
 export const carouselPhotos = [
   {
