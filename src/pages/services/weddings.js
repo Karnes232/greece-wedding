@@ -12,6 +12,7 @@ import {
   carouselPhotos,
   serviceDescriptionPhoto,
   serviceListPhoto,
+  serviceDescriptionPhoto2,
 } from "../../data/pages/weddingPhotos"
 
 const weddings = () => {
@@ -42,7 +43,7 @@ const weddings = () => {
       <ServicesDescription
         paragraph1="We believe that your wedding should be as unique as your love story. That's why we offer tailor-made wedding packages designed to reflect your personal style, preferences, and dreams. Our experienced planners will work closely with you to understand your vision, offer expert guidance, and curate a customized package that encompasses every aspect of your special day. From venue selection and decor to catering and entertainment, we will handle all the details, ensuring a seamless and unforgettable wedding experience."
         paragraph2="Your dream wedding awaits in Punta Cana, and Greece Weddings is here to guide you every step of the way. Explore our website to learn more about our wedding services, browse through our gallery of stunning weddings we have created, and read testimonials from our delighted couples. Contact us today to schedule a consultation with our dedicated team of wedding planners. Together, let's create a wedding day that surpasses your expectations and leaves you with beautiful memories to cherish for a lifetime."
-        image={serviceDescriptionPhoto}
+        image={serviceDescriptionPhoto2}
       />
       <PreviousWork serviceTitle="Weddings" PreviousWork={previousWeddings} />
     </Layout>

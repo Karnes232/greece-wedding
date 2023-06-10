@@ -1,10 +1,10 @@
 //Photos for Carousel
-const carouselPhoto1 = "https://i.postimg.cc/HLS47sgq/wedding26.webp"
-const carouselPhoto1Mobile = "https://i.postimg.cc/tgdNRtS4/wedding26.webp"
-const carouselPhoto2 = "https://i.postimg.cc/MHZVdWnw/wedding7.webp"
-const carouselPhoto2Mobile = "https://i.postimg.cc/brXNwLjB/wedding7.webp"
-const carouselPhoto3 = "https://i.postimg.cc/50gFHZnR/wedding4.webp"
-const carouselPhoto3Mobile = "https://i.postimg.cc/bY2ZfSj5/wedding4.webp"
+const carouselPhoto1 = "https://i.postimg.cc/y8GDc5sk/76.webp"
+const carouselPhoto1Mobile = "https://i.postimg.cc/KjK0JwC4/76.webp"
+const carouselPhoto2 = "https://i.postimg.cc/c1ffZsZT/65.webp"
+const carouselPhoto2Mobile = "https://i.postimg.cc/rpX2WC0S/65.webp"
+const carouselPhoto3 = "https://i.postimg.cc/KzS4sMKb/80.webp"
+const carouselPhoto3Mobile = "https://i.postimg.cc/bwfm96gN/80.webp"
 
 export const carouselPhotos = [
   {
@@ -22,5 +22,7 @@ export const carouselPhotos = [
 ]
 
 export const serviceDescriptionPhoto =
-  "https://i.postimg.cc/bY2ZfSj5/wedding4.webp"
-export const serviceListPhoto = "https://i.postimg.cc/brXNwLjB/wedding7.webp"
+  "https://i.postimg.cc/QMDbGHKQ/43.webp"
+export const serviceListPhoto = "https://i.postimg.cc/WbZGWQDx/setup25.webp"
+export const serviceDescriptionPhoto2 =
+  "https://i.postimg.cc/XJ3v40nB/38.webp"
