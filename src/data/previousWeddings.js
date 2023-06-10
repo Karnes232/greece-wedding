@@ -1,25 +1,25 @@
-import image from "../images/wedding.jpg"
-import image2 from "../images/wedding2.jpg"
-import image3 from "../images/wedding3.jpg"
+const image = 'https://i.postimg.cc/Pr6tLRk9/99.webp'
+const image2 = "https://i.postimg.cc/4yq7J9YW/16.webp"
+const image3 = "https://i.postimg.cc/FRn1ZLVh/21.webp"
 
 const previousWeddings = [
   {
     image: image,
-    eventTitle: "ALEXA + CONOR’S ROMANTIC JUNE WEDDING",
+    eventTitle: "Abigail and Samuel’S ocean inspired Wedding",
     description:
-      "A romantic wedding ceremony and reception with garden-inspired decor at the Bridge Building",
+      "A dreamy beach wedding ceremony and reception adorned with coastal-inspired decor by the shimmering shore",
   },
   {
     image: image2,
-    eventTitle: "GAGE + BRIAN’S ROMANTIC GARDEN-INSPIRED WEDDING",
+    eventTitle: "Sophia and Ethan’S Romantic Beach Wedding",
     description:
-      "A romantic and modern June wedding with neutral decor and bright flower arrangements at The Bell Tower",
+      "A picturesque beach wedding ceremony and reception, creating a romantic atmosphere by the ocean",
   },
   {
     image: image3,
-    eventTitle: "MACKENZIE + JACK’S TROPICAL SUMMER WEDDING",
+    eventTitle: "Olivia and Liam’s Tropical Summer Wedding",
     description:
-      "A summer wedding with disco ball decor, tropical leaves, and pops of navy blue at The Cordelle",
+      "A charming lakeside wedding adorned with lush tropical foliage, creating a serene and romantic atmosphere",
   },
 ]
 
