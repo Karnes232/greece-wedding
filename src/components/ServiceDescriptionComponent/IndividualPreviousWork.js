@@ -10,7 +10,7 @@ const IndividualPreviousWork = ({ eventTitle, image, description }) => {
         <img
           src={image}
           alt="Wedding"
-          className="brightness-50 hover:scale-125 hover:brightness-100 transition-all duration-300"
+          className="brightness-50 hover:scale-125 hover:brightness-100 focus:brightness-100 transition-all duration-300"
         />
       </div>
       <p className="text-sm text-secondary-color font-extralight leading-6 font-serif">
