@@ -40,7 +40,7 @@ const LinksComponent = ({ name, url, description, image, textColor }) => {
           duration: 3,
           delay: 0.3,
         }}
-        className={`text-sm text-secondary-color font-extralight leading-6 font-serif mx-16 lg:mx-8 md:max-w-sm md:text-lg xl:mt-4`}
+        className={`text-sm text-secondary-color font-extralight leading-6 font-serif mx-16 lg:mx-8 md:max-w-sm md:text-lg xl:mt-4 h-[7.5rem] md:h-[8rem] lg:h-[12rem] flex justify-center items-center lg:items-start lg:mt-3`}
       >
         {description}
       </motion.p>
