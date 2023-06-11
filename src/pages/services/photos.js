@@ -26,16 +26,16 @@ const photos = () => {
         image={serviceListPhoto}
         listTitle="Photo Services"
         list={[
-          "Ceremony & Reception Coordination",
-          "Rehearsal Dinner Coordination",
-          "Rentals & Vendor Coordination",
-          "Wedding Day Timeline",
-          "Floor Plan Design",
-          "Wedding Concept & Design",
-          "Budget Management",
-          "Security & Staffing",
-          "Tenting",
-          "Transportation & Parking",
+          "Professional Photography Services",
+          "High-resolution Digital Images",
+          "Customized Photo Albums",
+          "Photo Prints in Various Sizes",
+          "Online Gallery for Image Viewing and Sharing",
+          "Photo Editing and Retouching Services",
+          "On-location Shoots in Unique Settings",
+          "Personalized Photo Calendars",
+          "Photo Booth Rental with Props and Backdrops",
+          "Video Slideshows and Montages",
         ]}
       />
       <PreviousWork serviceTitle="Photoshoots" PreviousWork={previousPhoto} />

@@ -27,13 +27,13 @@ const events = () => {
         image={serviceListPhoto}
         listTitle="Types of Events"
         list={[
-          "Meetings, seminars, speakers, training",
-          "Company announcements, product launches or releases, milestone celebrations",
-          "Team-building days, executive retreats",
-          "Conferences, trade shows, networking events",
-          "Fundraisers, auctions, charity events",
-          "Holiday parties, annual parties, employee appreciation",
-          "Anything else you need!",
+          "Conferences, Workshops, Presentations, Educational Sessions",
+          "Corporate Announcements, Product Unveilings, Milestone Festivities",
+          "Collaborative Workshops, Leadership Getaways",
+          "Industry Gatherings, Business Expositions, Professional Networking",
+          "Fundraisers, Auctions, Charity events",
+          "Festive Gatherings, Yearly Celebrations, Staff Recognition",
+          "Your Additional Requirements, We're Here!",
         ]}
       />
       <PreviousWork
