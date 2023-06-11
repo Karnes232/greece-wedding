@@ -3,7 +3,7 @@ import Layout from "../../components/layout"
 import SwiperCarousel from "../../components/BackgroundCarousel/SwiperCarousel"
 import ServicesDescription from "../../components/ServiceDescriptionComponent/ServicesDescription"
 import PreviousWork from "../../components/ServiceDescriptionComponent/PreviousWork"
-import previousEvents from "../../data/previousEvents"
+import previousEvents from "../../data/aboutEvents"
 
 import {
   carouselPhotos,
