@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import "react-phone-number-input/style.css"
 import PhoneInput from "react-phone-number-input"
-const ContactInfo = () => {
+const ContactInfo = ({name, setName}) => {
   const [phoneValue, setPhoneValue] = useState()
   return (
     <>
@@ -13,6 +13,8 @@ const ContactInfo = () => {
           className="contactFormInput peer"
           placeholder=" "
           required
+          value={name}
+          onChange={(e) => setName(e.target.value)}
         />
         <label htmlFor="name" className="contactFormLabel">
           Full Name
@@ -35,7 +37,7 @@ const ContactInfo = () => {
         <PhoneInput
           name="telephone"
           international
-          countryCallingCodeEditable={false}
+          countryCallingCodeEditable={true}
           placeholder="Enter phone number"
           value={phoneValue}
           onChange={setPhoneValue}

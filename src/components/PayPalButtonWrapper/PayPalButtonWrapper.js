@@ -55,7 +55,7 @@ const PayPalButtonWrapper = ({
             const firstName = details.payer.name.given_name
             const lastName = details.payer.name.surname
             const deposit = details.purchase_units[0].amount.value
-            window.location.href = `${host}/thankyou/?firstname=${firstName}&lastname=${lastName}&deposit=${deposit}&balance=${balance}`
+            window.location.href = `${host}/payment/thankyou/?firstname=${firstName}&lastname=${lastName}&deposit=${deposit}&balance=${balance}`
           })
         }}
       />
