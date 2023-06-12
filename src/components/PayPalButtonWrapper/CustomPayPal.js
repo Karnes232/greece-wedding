@@ -13,7 +13,7 @@ const CustomPayPal = ({ price, balance }) => {
     <div className="flex justify-center md:w-80 xl:w-96">
       <PayPalScriptProvider
         options={{
-          "client-id": sandBox,
+          "client-id": liveId,
           components: "buttons",
           currency: "USD",
         }}
