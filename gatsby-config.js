@@ -41,6 +41,12 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "G-K1HH4PTDKJ",
+      },
+    },
+    {
       resolve: `gatsby-omni-font-loader`,
       options: {
         enableListener: true,

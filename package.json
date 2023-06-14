@@ -11,6 +11,7 @@
     "framer-motion": "^10.12.16",
     "gatsby": "^5.10.0",
     "gatsby-omni-font-loader": "^2.0.2",
+    "gatsby-plugin-google-analytics": "^5.10.0",
     "gatsby-plugin-image": "^3.10.0",
     "gatsby-plugin-manifest": "^5.10.0",
     "gatsby-plugin-offline": "^6.10.0",
