@@ -18,7 +18,7 @@ const ContactForm = () => {
         className="w-64 md:w-full max-w-md flex flex-col justify-center items-center mx-auto my-5"
       >
         <input type="hidden" name="form-name" value="contact" />
-        <ContactInfo name={name} setName={setName}/>
+        <ContactInfo name={name} setName={setName} />
         <EventInfo />
         <GuestCount />
         <MoreInfo />

@@ -1,13 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { PayPalButtons, usePayPalScriptReducer } from "@paypal/react-paypal-js"
 
-const PayPalButtonWrapper = ({
-  currency,
-  showSpinner,
-  amount,
-  balance,
-
-}) => {
+const PayPalButtonWrapper = ({ currency, showSpinner, amount, balance }) => {
   const style = { layout: "vertical", shape: "pill" }
   const [{ options, isPending }, dispatch] = usePayPalScriptReducer()
   const [host, setHost] = useState("")

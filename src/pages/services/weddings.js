@@ -38,7 +38,7 @@ const weddings = () => {
           "Security & Staffing",
           "Tenting",
           "Transportation & Parking",
-          "Marriage Proposals"
+          "Marriage Proposals",
         ]}
       />
       <ServicesDescription

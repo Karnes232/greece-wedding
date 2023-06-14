@@ -1,4 +1,4 @@
-const image = 'https://i.postimg.cc/Pr6tLRk9/99.webp'
+const image = "https://i.postimg.cc/Pr6tLRk9/99.webp"
 const image2 = "https://i.postimg.cc/4yq7J9YW/16.webp"
 const image3 = "https://i.postimg.cc/FRn1ZLVh/21.webp"
 

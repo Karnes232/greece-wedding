@@ -21,7 +21,6 @@ const previousPhoto = [
     description:
       "A joyous tropical family reunion, filled with laughter, beach adventures, and cherished memories",
   },
-  
 ]
 
 export default previousPhoto

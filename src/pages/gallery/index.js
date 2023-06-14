@@ -23,9 +23,10 @@ const Index = () => {
         <PhotoAlbum
           photos={photoList}
           layout="rows"
-          targetRowHeight={(containerWidth) => {
-            if (containerWidth < 400) return 150;
-            return 250}}
+          targetRowHeight={containerWidth => {
+            if (containerWidth < 400) return 150
+            return 250
+          }}
           onClick={({ index }) => setIndex(index)}
         />
 

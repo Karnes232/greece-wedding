@@ -27,6 +27,14 @@ const IndexPage = () => (
   </Layout>
 )
 
-export const Head = () => <Seo title="Home" />
+export const Head = () => (
+  <>
+    <Seo title="Home" />
+    <meta
+      name="google-site-verification"
+      content="sN5dEuZZzj940eKwcVwd4RXMUzeZXQOqqHhjLXNFoHE"
+    />
+  </>
+)
 
 export default IndexPage

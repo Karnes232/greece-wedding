@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import "react-phone-number-input/style.css"
 import PhoneInput from "react-phone-number-input"
-const ContactInfo = ({name, setName}) => {
+const ContactInfo = ({ name, setName }) => {
   const [phoneValue, setPhoneValue] = useState()
   return (
     <>
@@ -14,7 +14,7 @@ const ContactInfo = ({name, setName}) => {
           placeholder=" "
           required
           value={name}
-          onChange={(e) => setName(e.target.value)}
+          onChange={e => setName(e.target.value)}
         />
         <label htmlFor="name" className="contactFormLabel">
           Full Name

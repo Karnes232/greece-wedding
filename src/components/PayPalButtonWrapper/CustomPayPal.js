@@ -23,7 +23,6 @@ const CustomPayPal = ({ price, balance }) => {
           showSpinner={false}
           amount={price}
           balance={balance}
-      
         />
       </PayPalScriptProvider>
     </div>
