@@ -12,7 +12,7 @@ module.exports = {
     title: `Greece Weddings, Photos & Events`,
     description: `Create lasting memories with Greece Weddings, Photos & Events, your premier wedding, event, and photography specialists. From dream weddings to unforgettable celebrations, we bring your vision to life. Our talented team captures every moment with precision and artistry. Trust us to make your moments truly unforgettable.`,
     author: `@karnes232`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://www.greeceeventspc.com`,
   },
   plugins: [
     "gatsby-plugin-postcss",
