@@ -35,6 +35,8 @@ const SwiperCarousel = ({ cta, photoList }) => {
               className=" h-[35vh] md:h-[45vh] lg:h-[65vh] object-cover w-full brightness-50"
               alt="Greece Weddings"
               // loading="lazy"
+              width={screenWidth > 600 ? ( 1920 ) : ( 640 )}
+              height={screenWidth > 600 ? ( 1280 ) : ( 427 )}
             />  
             {/* <img
               src={image.mobile}
