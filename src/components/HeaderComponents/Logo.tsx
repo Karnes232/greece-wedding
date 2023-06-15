@@ -20,6 +20,8 @@ const Logo = () => {
                 src={logo}
                 className=""
                 alt=""
+                width={300}
+                height={183}
               />
           </div>
         </Link>
