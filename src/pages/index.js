@@ -5,6 +5,7 @@ import Seo from "../components/seo"
 import IndexInformation from "../components/IndexInformationComponent/IndexInformation"
 import ServicesComponent from "../components/ServicesComponent/ServicesComponent"
 import Testimonials from "../components/TestimonialsComponent/Testimonials"
+import { schema } from "../data/schema"
 
 //Photos for Carousel & Services
 import {
@@ -29,7 +30,7 @@ const IndexPage = () => (
 
 export const Head = () => (
   <>
-    <Seo title="" description='Create lasting memories with Greece Weddings, Photos & Events, your premier wedding, event, and photography specialists. From dream weddings to unforgettable celebrations, we bring your vision to life. Our talented team captures every moment with precision and artistry. Trust us to make your moments truly unforgettable.' />
+    <Seo title="" description='Create lasting memories with Greece Weddings, Photos & Events, your premier wedding, event, and photography specialists. From dream weddings to unforgettable celebrations, we bring your vision to life. Our talented team captures every moment with precision and artistry. Trust us to make your moments truly unforgettable.' schemaMarkup={schema}/>
     <meta
       name="google-site-verification"
       content="sN5dEuZZzj940eKwcVwd4RXMUzeZXQOqqHhjLXNFoHE"
