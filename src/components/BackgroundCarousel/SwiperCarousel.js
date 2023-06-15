@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react"
 
@@ -10,7 +10,11 @@ import logo from "../../images/greeceLogo-white-small.webp"
 
 import { Link } from "gatsby"
 const SwiperCarousel = ({ cta, photoList }) => {
-  const screenWidth = window.innerWidth
+  const [screenWidth, setScreenWidth] = useState(undefined)
+  useEffect(() => {
+    setScreenWidth(window.innerWidth)
+  }, [])
+
   return (
     <>
       <Swiper
