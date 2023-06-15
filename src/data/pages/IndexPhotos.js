@@ -20,6 +20,6 @@ export const carouselPhotos = [
   },
 ]
 
-export const weddingPhoto = "https://i.postimg.cc/k42B4BRB/wedding10.webp"
-export const eventPhoto = "https://i.postimg.cc/x1MKg3S3/wedding34.webp"
-export const PhotoSession = "https://i.postimg.cc/gJT8JJjB/55.webp"
+export const weddingPhoto = "https://i.postimg.cc/PNsrB7NM/wedding10-s.webp"
+export const eventPhoto = "https://i.postimg.cc/y6JhCSkJ/wedding34-s.webp"
+export const PhotoSession = "https://i.postimg.cc/90qQg2XM/55-s.webp"
