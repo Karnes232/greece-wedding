@@ -10,6 +10,7 @@ import logo from "../../images/greeceLogo-white-small.webp"
 
 import { Link } from "gatsby"
 const SwiperCarousel = ({ cta, photoList }) => {
+  const screenWidth = window.innerWidth
   return (
     <>
       <Swiper
@@ -24,18 +25,19 @@ const SwiperCarousel = ({ cta, photoList }) => {
       >
         {photoList.map((image, index) => (
           <SwiperSlide className="relative" key={index}>
+          {screenWidth > 600 ? (
             <img
               src={image.image}
               className="hidden md:block h-[35vh] md:h-[45vh] lg:h-[65vh] object-cover w-full brightness-50"
               alt="Greece Weddings"
               // loading="lazy"
-            />
+            />  ) : (
             <img
               src={image.mobile}
               className="md:hidden h-[35vh] md:h-[45vh] lg:h-[65vh] object-cover w-full brightness-50"
               alt="Greece Weddings"
               // loading="lazy"
-            />
+            />)}
             <div
               className={`absolute top-1/2 left-[55%] lg:left-[52%] transform -translate-x-1/2 -translate-y-1/2 brightness-150 flex flex-col h-48 items-center ${
                 cta ? "justify-center" : "justify-start"
