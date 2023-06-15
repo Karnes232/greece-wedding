@@ -45,6 +45,8 @@ const SwiperCarousel = ({ cta, photoList }) => {
                 src={logo}
                 className="w-52 md:w-80 xl:w-96 brightness-150"
                 alt=""
+                width={500}
+                height={305}
               />
               {cta ? (
                 <button className="w-28 md:w-28 lg:w-32 text-xs bg-white hover:opacity-75 text-black py-3 px-2 md:px-3 rounded-sm mt-10 md:mt-12 mr-8 md:mr-[4.5rem] uppercase font-bold">
