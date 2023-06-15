@@ -33,10 +33,10 @@ module.exports = {
         name: `Greece-Weddings-Photos-Events`,
         short_name: `Greece-Weddings`,
         start_url: `/`,
-        background_color: `#663399`,
+        background_color: `#f5f5f5`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
+        theme_color: `#f5f5f5`,
         display: `minimal-ui`,
         icon: `src/images/greeceLogo.png`, // This path is relative to the root of the site.
       },
