@@ -93,11 +93,12 @@ module.exports = {
     `gatsby-plugin-offline`,
     'gatsby-plugin-robots-txt',
     {
-      resolve: `gatsby-plugin-sitemap`,
+      resolve: 'gatsby-plugin-sitemap',
       options: {
-        exclude: [`/payment/*`, `/thankyou/*`],
-        
-      }
+        exclude: ['/payment/*', '/thankyou/*'],
+      },
     }
+    
   ],
+  
 }
