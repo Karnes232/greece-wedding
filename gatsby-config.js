@@ -95,7 +95,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
-        excludes: ['/payment/*', '/thankyou/*'],
+        excludes: ['/payment/*', '/payment','/thankyou/*', '/thankyou'],
       },
     }
     
