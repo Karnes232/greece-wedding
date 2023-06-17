@@ -92,6 +92,7 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     'gatsby-plugin-robots-txt',
+    `gatsby-plugin-netlify`,
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
