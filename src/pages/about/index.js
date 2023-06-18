@@ -45,5 +45,6 @@ export default index
 export const Head = () => (
   <>
     <Seo title="About Us" description='Create lasting memories with Greece Weddings, Photos & Events, your premier wedding, event, and photography specialists. From dream weddings to unforgettable celebrations, we bring your vision to life. Our talented team captures every moment with precision and artistry. Trust us to make your moments truly unforgettable.'/>
+    <link rel="canonical" href="https://greeceeventspc.com/about" />
   </>
 )
