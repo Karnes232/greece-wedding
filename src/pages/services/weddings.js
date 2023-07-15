@@ -5,9 +5,6 @@ import ServicesDescription from "../../components/ServiceDescriptionComponent/Se
 import ServicesList from "../../components/ServiceDescriptionComponent/ServicesList"
 import PreviousWork from "../../components/ServiceDescriptionComponent/PreviousWork"
 
-//Event Images
-import previousWeddings from "../../data/previousWeddings"
-
 import { carouselPhotos } from "../../data/pages/weddingPhotos"
 import Seo from "../../components/seo"
 import { graphql } from "gatsby"
