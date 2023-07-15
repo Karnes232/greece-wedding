@@ -18,63 +18,64 @@ import {
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
-  query MyQuery {
-    indexInformation: allContentfulIndexPage {
-      edges {
-        node {
-          title
-          title2
-          title3
-          paragraph1 {
-            paragraph1
-          }
-          paragraph2 {
-            paragraph2
-          }
-          paragraph3 {
-            paragraph3
-          }
-          button
-        }
-      }
-    }
-    serviceComponent: allContentfulIndexPageServiceComponent {
-      edges {
-        node {
-          title
-          title1
-          paragraph1 {
-            paragraph1
-          }
-          title2
-          paragraph2 {
-            paragraph2
-          }
-          title3
-          paragraph3 {
-            paragraph3
+    query MyQuery {
+      indexInformation: allContentfulIndexPage {
+        edges {
+          node {
+            title
+            title2
+            title3
+            paragraph1 {
+              paragraph1
+            }
+            paragraph2 {
+              paragraph2
+            }
+            paragraph3 {
+              paragraph3
+            }
+            button
           }
         }
       }
+      serviceComponent: allContentfulIndexPageServiceComponent {
+        edges {
+          node {
+            title
+            title1
+            paragraph1 {
+              paragraph1
+            }
+            title2
+            paragraph2 {
+              paragraph2
+            }
+            title3
+            paragraph3 {
+              paragraph3
+            }
+          }
+        }
+      }
     }
-  }
   `)
   //console.log(data.serviceComponent.edges[0].node)
   return (
-  <Layout>
-    <SwiperCarousel cta={true} photoList={carouselPhotos} />
-    <IndexInformation 
-      indexInformation={data.indexInformation.edges[0].node}
-    />
-    <ServicesComponent
-      image1={weddingPhoto}
-      image2={eventPhoto}
-      image3={PhotoSession}
-      serviceComponentData={data.serviceComponent.edges[0].node}
-    />
-    <Testimonials />
-  </Layout>
-)}
+    <Layout>
+      <SwiperCarousel cta={true} photoList={carouselPhotos} />
+      <IndexInformation
+        indexInformation={data.indexInformation.edges[0].node}
+      />
+      <ServicesComponent
+        image1={weddingPhoto}
+        image2={eventPhoto}
+        image3={PhotoSession}
+        serviceComponentData={data.serviceComponent.edges[0].node}
+      />
+      <Testimonials />
+    </Layout>
+  )
+}
 
 export const Head = () => (
   <>
