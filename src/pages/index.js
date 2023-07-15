@@ -57,9 +57,30 @@ const IndexPage = () => {
           }
         }
       }
+      testimonial: allContentfulIndexPageTestimonials {
+        edges {
+          node {
+            client1
+            review1 {
+              review1
+            }
+            reviewLocation1
+            client2
+            review2 {
+              review2
+            }
+            reviewLocation2
+            client3
+            review3 {
+              review3
+            }
+            reviewLocation3
+          }
+        }
+      }
     }
   `)
-  //console.log(data.serviceComponent.edges[0].node)
+
   return (
     <Layout>
       <SwiperCarousel cta={true} photoList={carouselPhotos} />
@@ -72,7 +93,27 @@ const IndexPage = () => {
         image3={PhotoSession}
         serviceComponentData={data.serviceComponent.edges[0].node}
       />
-      <Testimonials />
+      {data.testimonial && (
+        <Testimonials
+          testimonials={[
+            {
+              client: data.testimonial.edges[0].node.client1,
+              review: data.testimonial.edges[0].node.review1.review1,
+              reviewLocation: data.testimonial.edges[0].node.reviewLocation1,
+            },
+            {
+              client: data.testimonial.edges[0].node.client2,
+              review: data.testimonial.edges[0].node.review2.review2,
+              reviewLocation: data.testimonial.edges[0].node.reviewLocation2,
+            },
+            {
+              client: data.testimonial.edges[0].node.client3,
+              review: data.testimonial.edges[0].node.review3.review3,
+              reviewLocation: data.testimonial.edges[0].node.reviewLocation3,
+            },
+          ]}
+        />
+      )}
     </Layout>
   )
 }

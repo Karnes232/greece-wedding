@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import TextComponent from "../TextComponent/TextComponent"
 import TestimonialCarousel from "./TestimonialCarousel"
 
-const Testimonials = () => {
+const Testimonials = ({ testimonials }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -21,7 +21,7 @@ const Testimonials = () => {
           TESTIMONIALS FROM OUR
         </h1>
         <TextComponent title="HAPPY CLIENTS" className="lg:text-5xl lg:mb-0" />
-        <TestimonialCarousel />
+        <TestimonialCarousel testimonials={testimonials} />
       </div>
     </motion.div>
   )

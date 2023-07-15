@@ -5,9 +5,7 @@ import "swiper/css/effect-fade"
 import "swiper/css/pagination"
 import { Autoplay, Pagination } from "swiper"
 
-import testimonials from "../../data/testimonials"
-
-const TestimonialCarousel = () => {
+const TestimonialCarousel = ({ testimonials }) => {
   return (
     <>
       <Swiper
