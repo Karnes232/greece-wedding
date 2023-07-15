@@ -1,4 +1,5 @@
 import * as React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 import SwiperCarousel from "../components/BackgroundCarousel/SwiperCarousel"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -15,18 +16,65 @@ import {
   PhotoSession,
 } from "../data/pages/IndexPhotos"
 
-const IndexPage = () => (
+const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+  query MyQuery {
+    indexInformation: allContentfulIndexPage {
+      edges {
+        node {
+          title
+          title2
+          title3
+          paragraph1 {
+            paragraph1
+          }
+          paragraph2 {
+            paragraph2
+          }
+          paragraph3 {
+            paragraph3
+          }
+          button
+        }
+      }
+    }
+    serviceComponent: allContentfulIndexPageServiceComponent {
+      edges {
+        node {
+          title
+          title1
+          paragraph1 {
+            paragraph1
+          }
+          title2
+          paragraph2 {
+            paragraph2
+          }
+          title3
+          paragraph3 {
+            paragraph3
+          }
+        }
+      }
+    }
+  }
+  `)
+  //console.log(data.serviceComponent.edges[0].node)
+  return (
   <Layout>
     <SwiperCarousel cta={true} photoList={carouselPhotos} />
-    <IndexInformation />
+    <IndexInformation 
+      indexInformation={data.indexInformation.edges[0].node}
+    />
     <ServicesComponent
       image1={weddingPhoto}
       image2={eventPhoto}
       image3={PhotoSession}
+      serviceComponentData={data.serviceComponent.edges[0].node}
     />
     <Testimonials />
   </Layout>
-)
+)}
 
 export const Head = () => (
   <>
