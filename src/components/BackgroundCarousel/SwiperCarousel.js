@@ -29,15 +29,14 @@ const SwiperCarousel = ({ cta, photoList }) => {
       >
         {photoList.map((image, index) => (
           <SwiperSlide className="relative" key={index}>
-          
             <img
-              src={screenWidth > 600 ? ( image.image ) : ( image.mobile )}
+              src={screenWidth > 600 ? image.image : image.mobile}
               className=" h-[35vh] md:h-[45vh] lg:h-[65vh] object-cover w-full brightness-50"
               alt="Capturing Unforgettable Moments: Greece Weddings - Punta Cana"
               // loading="lazy"
-              width={screenWidth > 600 ? ( 1920 ) : ( 640 )}
-              height={screenWidth > 600 ? ( 1280 ) : ( 427 )}
-            />  
+              width={screenWidth > 600 ? 1920 : 640}
+              height={screenWidth > 600 ? 1280 : 427}
+            />
             {/* <img
               src={image.mobile}
               className="md:hidden h-[35vh] md:h-[45vh] lg:h-[65vh] object-cover w-full brightness-50"

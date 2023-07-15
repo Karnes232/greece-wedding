@@ -48,6 +48,9 @@ export default Index
 
 export const Head = () => (
   <>
-    <Seo title="Photo Gallery" description='Create lasting memories with Greece Weddings, Photos & Events, your premier wedding, event, and photography specialists. From dream weddings to unforgettable celebrations, we bring your vision to life. Our talented team captures every moment with precision and artistry. Trust us to make your moments truly unforgettable.'/>
+    <Seo
+      title="Photo Gallery"
+      description="Create lasting memories with Greece Weddings, Photos & Events, your premier wedding, event, and photography specialists. From dream weddings to unforgettable celebrations, we bring your vision to life. Our talented team captures every moment with precision and artistry. Trust us to make your moments truly unforgettable."
+    />
   </>
 )

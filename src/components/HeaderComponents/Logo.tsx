@@ -16,13 +16,7 @@ const Logo = () => {
               formats={["auto", "webp", "avif"]}
               alt=""
             /> */}
-            <img
-                src={logo}
-                className=""
-                alt=""
-                width={300}
-                height={183}
-              />
+            <img src={logo} className="" alt="" width={300} height={183} />
           </div>
         </Link>
       </div>

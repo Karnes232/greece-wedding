@@ -1,20 +1,22 @@
 import React from "react"
 import TextComponent from "../TextComponent/TextComponent"
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 
 const IndexInformation = () => {
+ 
+  // const { title, title2, title3, paragraph1, paragraph2, paragraph3, button } = (data.allContentfulIndexPage.edges[0].node)
   return (
     <div className=" bg-primary-color py-5 md:py-20 md:px-32">
       <h1 className="text-lg mb-2 mx-2 text-center font-extralight uppercase">
         Experience Unforgettable Moments in Paradise
       </h1>
       <TextComponent
-        title="Plan Your Perfect Celebration"
-        paragraph="Are you dreaming of a picturesque wedding or a memorable social event in the enchanting paradise of Punta Cana, Dominican Republic? Look no further than Greece Weddings, your trusted partner in creating extraordinary experiences."
+        title='Plan Your Perfect Celebration'
+        paragraph='Are you dreaming of a picturesque wedding or a memorable social event in the enchanting paradise of Punta Cana, Dominican Republic? Look no further than Greece Weddings, your trusted partner in creating extraordinary experiences.'
         className="uppercase"
       />
       <TextComponent
-        paragraph="We specialize in crafting exceptional weddings, social events, and photo sessions for tourists visiting Punta Cana. With our expertise and attention to detail, we ensure that every moment of your special occasion is filled with beauty, joy, and cherished memories."
+        paragraph='We specialize in crafting exceptional weddings, social events, and photo sessions for tourists visiting Punta Cana. With our expertise and attention to detail, we ensure that every moment of your special occasion is filled with beauty, joy, and cherished memories.'
         className=""
       />
       <TextComponent
