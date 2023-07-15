@@ -40,18 +40,24 @@ const Index = ({ data }) => {
         PreviousWork={[
           {
             image: data.allContentfulPreviousEvents.edges[0].node.image1,
-            eventTitle: data.allContentfulPreviousEvents.edges[0].node.eventTitle1,
-            description: data.allContentfulPreviousEvents.edges[0].node.description1,
+            eventTitle:
+              data.allContentfulPreviousEvents.edges[0].node.eventTitle1,
+            description:
+              data.allContentfulPreviousEvents.edges[0].node.description1,
           },
           {
             image: data.allContentfulPreviousEvents.edges[0].node.image2,
-            eventTitle: data.allContentfulPreviousEvents.edges[0].node.eventTitle2,
-            description:data.allContentfulPreviousEvents.edges[0].node.description2,
+            eventTitle:
+              data.allContentfulPreviousEvents.edges[0].node.eventTitle2,
+            description:
+              data.allContentfulPreviousEvents.edges[0].node.description2,
           },
           {
             image: data.allContentfulPreviousEvents.edges[0].node.image3,
-            eventTitle: data.allContentfulPreviousEvents.edges[0].node.eventTitle3,
-            description: data.allContentfulPreviousEvents.edges[0].node.description3,
+            eventTitle:
+              data.allContentfulPreviousEvents.edges[0].node.eventTitle3,
+            description:
+              data.allContentfulPreviousEvents.edges[0].node.description3,
           },
         ]}
       />

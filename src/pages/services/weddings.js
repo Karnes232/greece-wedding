@@ -8,51 +8,115 @@ import PreviousWork from "../../components/ServiceDescriptionComponent/PreviousW
 //Event Images
 import previousWeddings from "../../data/previousWeddings"
 
-import {
-  carouselPhotos,
-  serviceDescriptionPhoto,
-  serviceListPhoto,
-  serviceDescriptionPhoto2,
-} from "../../data/pages/weddingPhotos"
+import { carouselPhotos } from "../../data/pages/weddingPhotos"
 import Seo from "../../components/seo"
+import { graphql } from "gatsby"
 
-const weddings = () => {
+const Weddings = ({ data }) => {
+  const {
+    paragraph1,
+    paragraph2,
+    paragraph3,
+    paragraph4,
+    listTitle,
+    list,
+    serviceDescriptionPhoto,
+    serviceDescriptionPhoto2,
+    serviceListPhoto,
+  } = data.allContentfulWeddingPageInformation.edges[0].node
+  console.log(data.allContentfulPreviousWeddings)
   return (
     <Layout>
       <SwiperCarousel cta={false} photoList={carouselPhotos} />
       <ServicesDescription
-        paragraph1="Congratulations on your upcoming wedding! We understand that your wedding day is a once-in-a-lifetime moment filled with love, joy, and unforgettable memories. Let us turn your dream wedding into a reality in the captivating destination of Punta Cana."
-        paragraph2="Imagine exchanging your vows against the backdrop of pristine white-sand beaches, azure waters, and swaying palm trees. Punta Cana offers a magical setting for your special day, where natural beauty merges with romance, creating an idyllic atmosphere that will take your breath away. Whether you envision an intimate beach ceremony, a charming garden affair, or a grand celebration at a luxurious resort, our team of expert wedding planners will bring your vision to life with meticulous attention to detail."
+        paragraph1={paragraph1.paragraph1}
+        paragraph2={paragraph2.paragraph2}
         image={serviceDescriptionPhoto}
       />
       <ServicesList
         image={serviceListPhoto}
-        listTitle="Wedding Services"
-        list={[
-          "Ceremony & Reception Coordination",
-          "Rehearsal Dinner Coordination",
-          "Management of Rentals and Vendors",
-          "Schedule for Wedding Day",
-          "Layout and Seating Arrangement Design",
-          "Wedding Theme Creation and Design",
-          "Budget Management",
-          "Security & Staffing",
-          "Tenting",
-          "Transportation & Parking",
-          "Marriage Proposals",
-        ]}
+        listTitle={listTitle}
+        list={list}
       />
       <ServicesDescription
-        paragraph1="We believe that your wedding should be as unique as your love story. That's why we offer tailor-made wedding packages designed to reflect your personal style, preferences, and dreams. Our experienced planners will work closely with you to understand your vision, offer expert guidance, and curate a customized package that encompasses every aspect of your special day. From venue selection and decor to catering and entertainment, we will handle all the details, ensuring a seamless and unforgettable wedding experience."
-        paragraph2="Your dream wedding awaits in Punta Cana, and Greece Weddings is here to guide you every step of the way. Explore our website to learn more about our wedding services, browse through our gallery of stunning weddings we have created, and read testimonials from our delighted couples. Contact us today to schedule a consultation with our dedicated team of wedding planners. Together, let's create a wedding day that surpasses your expectations and leaves you with beautiful memories to cherish for a lifetime."
+        paragraph1={paragraph3.paragraph3}
+        paragraph2={paragraph4.paragraph4}
         image={serviceDescriptionPhoto2}
       />
-      <PreviousWork serviceTitle="Weddings" PreviousWork={previousWeddings} />
+      <PreviousWork
+        serviceTitle="Weddings"
+        PreviousWork={[
+          {
+            image: data.allContentfulPreviousWeddings.edges[0].node.image1,
+            eventTitle:
+              data.allContentfulPreviousWeddings.edges[0].node.weddingTitle1,
+            description:
+              data.allContentfulPreviousWeddings.edges[0].node.description1,
+          },
+          {
+            image: data.allContentfulPreviousWeddings.edges[0].node.image2,
+            eventTitle:
+              data.allContentfulPreviousWeddings.edges[0].node.weddingTitle2,
+            description:
+              data.allContentfulPreviousWeddings.edges[0].node.description2,
+          },
+          {
+            image: data.allContentfulPreviousWeddings.edges[0].node.image3,
+            eventTitle:
+              data.allContentfulPreviousWeddings.edges[0].node.weddingTitle3,
+            description:
+              data.allContentfulPreviousWeddings.edges[0].node.description3,
+          },
+        ]}
+      />
     </Layout>
   )
 }
 
-export default weddings
+export default Weddings
+
+export const query = graphql`
+  query MyQuery {
+    allContentfulWeddingPageInformation {
+      edges {
+        node {
+          paragraph1 {
+            paragraph1
+          }
+          paragraph2 {
+            paragraph2
+          }
+          paragraph3 {
+            paragraph3
+          }
+          paragraph4 {
+            paragraph4
+          }
+          listTitle
+          list
+          serviceDescriptionPhoto
+          serviceDescriptionPhoto2
+          serviceListPhoto
+        }
+      }
+    }
+    allContentfulPreviousWeddings {
+      edges {
+        node {
+          weddingTitle1
+          description1
+          image1
+          weddingTitle2
+          description2
+          image2
+          weddingTitle3
+          description3
+          image3
+        }
+      }
+    }
+  }
+`
 
 export const Head = () => (
   <>

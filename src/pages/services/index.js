@@ -13,7 +13,7 @@ import {
 import Seo from "../../components/seo"
 import { graphql } from "gatsby"
 
-const Index = ({data}) => {
+const Index = ({ data }) => {
   return (
     <Layout>
       <SwiperCarousel cta={false} photoList={carouselPhotos} />
@@ -23,7 +23,7 @@ const Index = ({data}) => {
         image3={PhotoSession}
         serviceComponentData={data.serviceComponent.edges[0].node}
       />
-      <ServiceInformation data={data.allContentfulServicePage.edges[0].node}/>
+      <ServiceInformation data={data.allContentfulServicePage.edges[0].node} />
     </Layout>
   )
 }
