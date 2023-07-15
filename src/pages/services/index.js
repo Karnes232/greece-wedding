@@ -11,8 +11,9 @@ import {
   PhotoSession,
 } from "../../data/pages/servicePhotos"
 import Seo from "../../components/seo"
+import { graphql } from "gatsby"
 
-const index = () => {
+const Index = ({data}) => {
   return (
     <Layout>
       <SwiperCarousel cta={false} photoList={carouselPhotos} />
@@ -20,13 +21,57 @@ const index = () => {
         image1={weddingPhoto}
         image2={eventPhoto}
         image3={PhotoSession}
+        serviceComponentData={data.serviceComponent.edges[0].node}
       />
-      <ServiceInformation />
+      <ServiceInformation data={data.allContentfulServicePage.edges[0].node}/>
     </Layout>
   )
 }
 
-export default index
+export const query = graphql`
+  query MyQuery {
+    allContentfulServicePage {
+      edges {
+        node {
+          title
+          title1
+          title2
+          paragraph1 {
+            paragraph1
+          }
+          paragraph2 {
+            paragraph2
+          }
+          paragraph3 {
+            paragraph3
+          }
+          button
+        }
+      }
+    }
+    serviceComponent: allContentfulIndexPageServiceComponent {
+      edges {
+        node {
+          title
+          title1
+          paragraph1 {
+            paragraph1
+          }
+          title2
+          paragraph2 {
+            paragraph2
+          }
+          title3
+          paragraph3 {
+            paragraph3
+          }
+        }
+      }
+    }
+  }
+`
+
+export default Index
 
 export const Head = () => (
   <>
