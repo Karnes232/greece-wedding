@@ -1,5 +1,5 @@
 import * as React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql } from "gatsby"
 import SwiperCarousel from "../components/BackgroundCarousel/SwiperCarousel"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -16,71 +16,7 @@ import {
   PhotoSession,
 } from "../data/pages/IndexPhotos"
 
-const IndexPage = () => {
-  const data = useStaticQuery(graphql`
-    query MyQuery {
-      indexInformation: allContentfulIndexPage {
-        edges {
-          node {
-            title
-            title2
-            title3
-            paragraph1 {
-              paragraph1
-            }
-            paragraph2 {
-              paragraph2
-            }
-            paragraph3 {
-              paragraph3
-            }
-            button
-          }
-        }
-      }
-      serviceComponent: allContentfulIndexPageServiceComponent {
-        edges {
-          node {
-            title
-            title1
-            paragraph1 {
-              paragraph1
-            }
-            title2
-            paragraph2 {
-              paragraph2
-            }
-            title3
-            paragraph3 {
-              paragraph3
-            }
-          }
-        }
-      }
-      testimonial: allContentfulIndexPageTestimonials {
-        edges {
-          node {
-            client1
-            review1 {
-              review1
-            }
-            reviewLocation1
-            client2
-            review2 {
-              review2
-            }
-            reviewLocation2
-            client3
-            review3 {
-              review3
-            }
-            reviewLocation3
-          }
-        }
-      }
-    }
-  `)
-
+const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SwiperCarousel cta={true} photoList={carouselPhotos} />
@@ -117,6 +53,70 @@ const IndexPage = () => {
     </Layout>
   )
 }
+
+export const query = graphql`
+  query MyQuery {
+    indexInformation: allContentfulIndexPage {
+      edges {
+        node {
+          title
+          title2
+          title3
+          paragraph1 {
+            paragraph1
+          }
+          paragraph2 {
+            paragraph2
+          }
+          paragraph3 {
+            paragraph3
+          }
+          button
+        }
+      }
+    }
+    serviceComponent: allContentfulIndexPageServiceComponent {
+      edges {
+        node {
+          title
+          title1
+          paragraph1 {
+            paragraph1
+          }
+          title2
+          paragraph2 {
+            paragraph2
+          }
+          title3
+          paragraph3 {
+            paragraph3
+          }
+        }
+      }
+    }
+    testimonial: allContentfulIndexPageTestimonials {
+      edges {
+        node {
+          client1
+          review1 {
+            review1
+          }
+          reviewLocation1
+          client2
+          review2 {
+            review2
+          }
+          reviewLocation2
+          client3
+          review3 {
+            review3
+          }
+          reviewLocation3
+        }
+      }
+    }
+  }
+`
 
 export const Head = () => (
   <>

@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import Layout from "../../components/layout"
 import SwiperCarousel from "../../components/BackgroundCarousel/SwiperCarousel"
 import ServicesDescription from "../../components/ServiceDescriptionComponent/ServicesDescription"
@@ -12,19 +13,21 @@ import {
 } from "../../data/pages/aboutPhotos"
 import Seo from "../../components/seo"
 
-const index = () => {
+const Index = ({ data }) => {
+  const { paragraph1, paragraph2, paragraph3, paragraph4 } =
+    data.allContentfulAboutPage.edges[0].node
   return (
     <Layout>
       <SwiperCarousel cta={false} photoList={carouselPhotos} />
       <ServicesDescription
-        paragraph1="We believe that every special occasion deserves to be celebrated in a truly extraordinary way. Nestled in the picturesque paradise of Punta Cana, we are a premier event planning and photography company dedicated to crafting unforgettable weddings, social events, and photo sessions. With a team of passionate professionals and a deep appreciation for beauty and romance, we are committed to turning your dreams into reality."
-        paragraph2="Greece Weddings was founded with a vision to provide exceptional experiences and capture the magic of life's most precious moments. Drawing inspiration from the rich culture and scenic beauty of Greece, we sought to bring that same sense of enchantment and elegance to the tropical paradise of Punta Cana. With years of experience in the industry and a genuine love for creating joyous celebrations, our team has established a reputation for excellence and impeccable service."
+        paragraph1={paragraph1.paragraph1}
+        paragraph2={paragraph2.paragraph2}
         paragraph3=""
         image={ServicesDescriptionImage}
       />
       <ServicesDescription
-        paragraph1="At Greece Weddings, we are committed to delivering excellence, personalized service, and unforgettable moments. We understand the significance of your special day and the trust you place in us to make it truly remarkable. From the moment you choose us as your partner, we will work tirelessly to ensure your experience is seamless, stress-free, and filled with joy and magic."
-        paragraph2="Whether you envision a romantic beach wedding, an intimate social gathering, or a captivating photo session, Greece Weddings is here to bring your dreams to life. Contact our dedicated team today to begin the journey of creating your unforgettable celebration in Punta Cana. Let us be a part of your story and help you create memories that will be treasured for a lifetime."
+        paragraph1={paragraph3.paragraph3}
+        paragraph2={paragraph4.paragraph4}
         paragraph3=""
         image={aboutUsPhoto}
         rowDirection="md:flex-row-reverse"
@@ -34,13 +37,67 @@ const index = () => {
 
       <PreviousWork
         serviceTitle="Events Planning"
-        PreviousWork={previousEvents}
+        PreviousWork={[
+          {
+            image: data.allContentfulPreviousEvents.edges[0].node.image1,
+            eventTitle: data.allContentfulPreviousEvents.edges[0].node.eventTitle1,
+            description: data.allContentfulPreviousEvents.edges[0].node.description1,
+          },
+          {
+            image: data.allContentfulPreviousEvents.edges[0].node.image2,
+            eventTitle: data.allContentfulPreviousEvents.edges[0].node.eventTitle2,
+            description:data.allContentfulPreviousEvents.edges[0].node.description2,
+          },
+          {
+            image: data.allContentfulPreviousEvents.edges[0].node.image3,
+            eventTitle: data.allContentfulPreviousEvents.edges[0].node.eventTitle3,
+            description: data.allContentfulPreviousEvents.edges[0].node.description3,
+          },
+        ]}
       />
     </Layout>
   )
 }
 
-export default index
+export default Index
+
+export const query = graphql`
+  query MyQuery {
+    allContentfulAboutPage {
+      edges {
+        node {
+          paragraph1 {
+            paragraph1
+          }
+          paragraph2 {
+            paragraph2
+          }
+          paragraph3 {
+            paragraph3
+          }
+          paragraph4 {
+            paragraph4
+          }
+        }
+      }
+    }
+    allContentfulPreviousEvents {
+      edges {
+        node {
+          eventTitle1
+          description1
+          image1
+          eventTitle2
+          description2
+          image2
+          eventTitle3
+          description3
+          image3
+        }
+      }
+    }
+  }
+`
 
 export const Head = () => (
   <>
