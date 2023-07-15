@@ -8,7 +8,7 @@ const IndexInformation = ({ indexInformation }) => {
       {indexInformation && (
         <>
           <h1 className="text-lg mb-2 mx-2 text-center font-extralight uppercase">
-            {indexInformation.title3}
+            {indexInformation.title2}
           </h1>
           <TextComponent
             title={indexInformation.title3}
