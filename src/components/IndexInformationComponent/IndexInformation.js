@@ -3,7 +3,6 @@ import TextComponent from "../TextComponent/TextComponent"
 import { Link } from "gatsby"
 
 const IndexInformation = ({indexInformation}) => {
-  console.log(indexInformation.paragraph1.paragraph1)
   
   return (
     <div className=" bg-primary-color py-5 md:py-20 md:px-32">

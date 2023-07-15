@@ -1,7 +1,6 @@
 import React from "react"
 import LinksComponent from "./LinksComponent"
 const ServicesComponent = ({ image1, image2, image3, serviceComponentData }) => {
-    console.log(serviceComponentData.paragraph1.paragraph1)
    return (
     <div className="bg-white flex justify-center items-center">
       <div className="max-w-5xl my-10 md:my-20  flex flex-col lg:flex-row justify-center items-center">
