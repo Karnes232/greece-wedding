@@ -5,47 +5,97 @@ import SwiperCarousel from "../../components/BackgroundCarousel/SwiperCarousel"
 import ServicesDescription from "../../components/ServiceDescriptionComponent/ServicesDescription"
 import ServicesList from "../../components/ServiceDescriptionComponent/ServicesList"
 import PreviousWork from "../../components/ServiceDescriptionComponent/PreviousWork"
-import previousEvents from "../../data/previousEvents"
 
 import {
   carouselPhotos,
-  serviceDescriptionPhoto,
-  serviceListPhoto,
 } from "../../data/pages/eventsPhotos"
 import Seo from "../../components/seo"
+import { graphql } from "gatsby"
 
-const events = () => {
+const Events = ({ data }) => {
+  const { paragraph1, paragraph2, serviceDescriptionPhoto, serviceListPhoto, listTitle, list } = data.allContentfulEventsPage.edges[0].node
+  console.log(data.allContentfulPreviousEvents.edges[0].node)
   return (
     <Layout>
       <SwiperCarousel cta={false} photoList={carouselPhotos} />
       <ServicesDescription
-        paragraph1="We believe that every special occasion deserves to be celebrated in style. Whether you're hosting a milestone birthday party, an anniversary celebration, a family reunion, or any other social event, we are here to bring your vision to life in the enchanting destination of Punta Cana."
-        paragraph2="Punta Cana offers the perfect backdrop for your social event, with its stunning natural beauty, warm tropical climate, and luxurious venues. From intimate gatherings to extravagant soirées, our team of experienced event planners will work closely with you to understand your unique preferences, desires, and expectations. We will transform your vision into a reality, creating an unforgettable celebration that surpasses your wildest dreams."
+        paragraph1={paragraph1.paragraph1}
+        paragraph2={paragraph2.paragraph2}
         paragraph3=""
         image={serviceDescriptionPhoto}
       />
       <ServicesList
         image={serviceListPhoto}
-        listTitle="Types of Events"
-        list={[
-          "Conferences, Workshops, Presentations, Educational Sessions",
-          "Corporate Announcements, Product Unveilings, Milestone Festivities",
-          "Collaborative Workshops, Leadership Getaways",
-          "Industry Gatherings, Business Expositions, Professional Networking",
-          "Fundraisers, Auctions, Charity events",
-          "Festive Gatherings, Yearly Celebrations, Staff Recognition",
-          "Your Additional Requirements, We're Here!",
-        ]}
+        listTitle={listTitle}
+        list={list}
       />
       <PreviousWork
         serviceTitle="Events Planning"
-        PreviousWork={previousEvents}
+        PreviousWork={[
+          {
+            image: data.allContentfulPreviousEvents.edges[0].node.image1,
+            eventTitle:
+              data.allContentfulPreviousEvents.edges[0].node.eventTitle1,
+            description:
+              data.allContentfulPreviousEvents.edges[0].node.description1,
+          },
+          {
+            image: data.allContentfulPreviousEvents.edges[0].node.image2,
+            eventTitle:
+              data.allContentfulPreviousEvents.edges[0].node.eventTitle2,
+            description:
+              data.allContentfulPreviousEvents.edges[0].node.description2,
+          },
+          {
+            image: data.allContentfulPreviousEvents.edges[0].node.image3,
+            eventTitle:
+              data.allContentfulPreviousEvents.edges[0].node.eventTitle3,
+            description:
+              data.allContentfulPreviousEvents.edges[0].node.description3,
+          },
+        ]}
       />
     </Layout>
   )
 }
 
-export default events
+export default Events
+
+export const query = graphql`
+  query MyQuery {
+    allContentfulEventsPage {
+      edges {
+        node {
+          paragraph1 {
+            paragraph1
+          }
+          paragraph2 {
+            paragraph2
+          }
+          serviceDescriptionPhoto
+          serviceListPhoto
+          listTitle
+          list
+        }
+      }
+    }
+    allContentfulPreviousEvents(filter: {title: {eq: "Previous Events Page"}}) {
+      edges {
+        node {
+          description1
+          description2
+          description3
+          eventTitle1
+          eventTitle2
+          eventTitle3
+          image1
+          image2
+          image3
+        }
+      }
+    }
+  }
+`
 
 export const Head = () => (
   <>
