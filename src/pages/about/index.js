@@ -15,6 +15,7 @@ import Seo from "../../components/seo"
 const Index = ({ data }) => {
   const { paragraph1, paragraph2, paragraph3, paragraph4 } =
     data.allContentfulAboutPage.edges[0].node
+  console.log(data.allContentfulPreviousEvents)
   return (
     <Layout>
       <SwiperCarousel cta={false} photoList={carouselPhotos} />
@@ -86,7 +87,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulPreviousEvents {
+    allContentfulPreviousEvents(filter: { title: { eq: "Previous Events" } }) {
       edges {
         node {
           eventTitle1

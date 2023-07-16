@@ -6,14 +6,19 @@ import ServicesDescription from "../../components/ServiceDescriptionComponent/Se
 import ServicesList from "../../components/ServiceDescriptionComponent/ServicesList"
 import PreviousWork from "../../components/ServiceDescriptionComponent/PreviousWork"
 
-import {
-  carouselPhotos,
-} from "../../data/pages/eventsPhotos"
+import { carouselPhotos } from "../../data/pages/eventsPhotos"
 import Seo from "../../components/seo"
 import { graphql } from "gatsby"
 
 const Events = ({ data }) => {
-  const { paragraph1, paragraph2, serviceDescriptionPhoto, serviceListPhoto, listTitle, list } = data.allContentfulEventsPage.edges[0].node
+  const {
+    paragraph1,
+    paragraph2,
+    serviceDescriptionPhoto,
+    serviceListPhoto,
+    listTitle,
+    list,
+  } = data.allContentfulEventsPage.edges[0].node
   console.log(data.allContentfulPreviousEvents.edges[0].node)
   return (
     <Layout>
@@ -79,7 +84,9 @@ export const query = graphql`
         }
       }
     }
-    allContentfulPreviousEvents(filter: {title: {eq: "Previous Events Page"}}) {
+    allContentfulPreviousEvents(
+      filter: { title: { eq: "Previous Events Page" } }
+    ) {
       edges {
         node {
           description1
