@@ -68,14 +68,30 @@ export const query = graphql`
         }
       }
     }
+    allContentfulSeo(filter: {title: {eq: "Services Page"}}) {
+      edges {
+        node {
+          title
+          title1
+          description1 {
+            description1
+          }
+        }
+      }
+    }
   }
 `
 
 export default Index
 
-export const Head = () => (
+export const Head = ({data}) => {
+  const { title1, description1 } = data.allContentfulSeo.edges[0].node
+  return (
   <>
-    <Seo description="Create lasting memories with Greece Weddings, Photos & Events, your premier wedding, event, and photography specialists. From dream weddings to unforgettable celebrations, we bring your vision to life. Our talented team captures every moment with precision and artistry. Trust us to make your moments truly unforgettable." />
+    <Seo
+      title={title1}
+      description={description1.description1}
+    />
     <link rel="canonical" href="https://greeceeventspc.com/services" />
   </>
-)
+)}

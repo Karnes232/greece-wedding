@@ -14,6 +14,7 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom"
 import "yet-another-react-lightbox/plugins/thumbnails.css"
 import photoList from "../../data/pages/galleryPhotos"
 import Seo from "../../components/seo"
+import { graphql } from "gatsby"
 
 const Index = () => {
   const [index, setIndex] = useState(-1)
@@ -46,11 +47,32 @@ const Index = () => {
 
 export default Index
 
-export const Head = () => (
+export const query = graphql`
+  query MyQuery {
+    allContentfulSeo(filter: {title: {eq: "Photo Gallery Page"}}) {
+      edges {
+        node {
+          title
+          title1
+          description1 {
+            description1
+          }
+        }
+      }
+    }
+  }
+`
+
+export const Head = ({data}) => {
+  const { title1, description1 } = data.allContentfulSeo.edges[0].node
+  return (
   <>
     <Seo
-      title="Photo Gallery"
-      description="Create lasting memories with Greece Weddings, Photos & Events, your premier wedding, event, and photography specialists. From dream weddings to unforgettable celebrations, we bring your vision to life. Our talented team captures every moment with precision and artistry. Trust us to make your moments truly unforgettable."
+      title={title1}
+      description={description1.description1}
     />
+    <link rel="canonical" href="https://greeceeventspc.com/gallery" />
   </>
-)
+)}
+
+

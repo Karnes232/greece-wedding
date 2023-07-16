@@ -4,7 +4,6 @@ import SwiperCarousel from "../../components/BackgroundCarousel/SwiperCarousel"
 import ServicesDescription from "../../components/ServiceDescriptionComponent/ServicesDescription"
 import ServicesList from "../../components/ServiceDescriptionComponent/ServicesList"
 import PreviousWork from "../../components/ServiceDescriptionComponent/PreviousWork"
-import previousPhoto from "../../data/previousPhoto"
 
 import { carouselPhotos } from "../../data/pages/photoSessionPhotos"
 import Seo from "../../components/seo"
@@ -100,15 +99,29 @@ export const query = graphql`
         }
       }
     }
+    allContentfulSeo(filter: {title: {eq: "Photos Page"}}) {
+      edges {
+        node {
+          title
+          title1
+          description1 {
+            description1
+          }
+        }
+      }
+    }
   }
 `
 
-export const Head = () => (
+
+export const Head = ({data}) => {
+  const { title1, description1 } = data.allContentfulSeo.edges[0].node
+  return (
   <>
     <Seo
-      title="Photo Services"
-      description="Create lasting memories with Greece Weddings, Photos & Events, your premier wedding, event, and photography specialists. From dream weddings to unforgettable celebrations, we bring your vision to life. Our talented team captures every moment with precision and artistry. Trust us to make your moments truly unforgettable."
+      title={title1}
+      description={description1.description1}
     />
     <link rel="canonical" href="https://greeceeventspc.com/services/photos" />
   </>
-)
+)}
