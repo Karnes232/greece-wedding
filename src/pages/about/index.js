@@ -13,7 +13,7 @@ import {
 import Seo from "../../components/seo"
 
 const Index = ({ data }) => {
-  const { paragraph1, paragraph2, paragraph3, paragraph4 } =
+  const { paragraph1, paragraph2, paragraph3, paragraph4, servicesDescriptionImage, aboutUsPhoto } =
     data.allContentfulAboutPage.edges[0].node
   return (
     <Layout>
@@ -22,7 +22,7 @@ const Index = ({ data }) => {
         paragraph1={paragraph1.paragraph1}
         paragraph2={paragraph2.paragraph2}
         paragraph3=""
-        image={ServicesDescriptionImage}
+        image={servicesDescriptionImage}
       />
       <ServicesDescription
         paragraph1={paragraph3.paragraph3}
@@ -83,6 +83,8 @@ export const query = graphql`
           paragraph4 {
             paragraph4
           }
+          servicesDescriptionImage
+          aboutUsPhoto
         }
       }
     }
