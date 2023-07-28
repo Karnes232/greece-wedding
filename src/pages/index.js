@@ -21,13 +21,13 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SwiperCarousel cta={true} photoList={carouselPhotos} />
       <IndexInformation
-        indexInformation={data.indexInformation.edges[0].node}
+        indexInformation={data?.indexInformation.edges[0].node}
       />
       <ServicesComponent
         image1={weddingPhoto}
         image2={eventPhoto}
         image3={PhotoSession}
-        serviceComponentData={data.serviceComponent.edges[0].node}
+        serviceComponentData={data?.serviceComponent.edges[0].node}
       />
       {data.testimonial && (
         <Testimonials

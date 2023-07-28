@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import logo from "../../images/greeceLogo.webp"
 const Logo = () => {
+
   return (
     <>
       <div className="flex justify-center items-center overflow-hidden">
