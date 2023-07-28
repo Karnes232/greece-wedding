@@ -15,6 +15,7 @@ import Seo from "../../components/seo"
 const Index = ({ data }) => {
   const { paragraph1, paragraph2, paragraph3, paragraph4, servicesDescriptionImage, aboutUsPhoto } =
     data.allContentfulAboutPage.edges[0].node
+  console.log(data.allContentfulPreviousEvents)
   return (
     <Layout>
       <SwiperCarousel cta={false} photoList={carouselPhotos} />
@@ -38,25 +39,25 @@ const Index = ({ data }) => {
         serviceTitle="Events Planning"
         PreviousWork={[
           {
-            image: data.allContentfulPreviousEvents.edges[0].node.image1,
+            image: data.allContentfulPreviousEvents.edges[0]?.node.image1,
             eventTitle:
-              data.allContentfulPreviousEvents.edges[0].node.eventTitle1,
+              data.allContentfulPreviousEvents.edges[0]?.node.eventTitle1,
             description:
-              data.allContentfulPreviousEvents.edges[0].node.description1,
+              data.allContentfulPreviousEvents.edges[0]?.node.description1,
           },
           {
-            image: data.allContentfulPreviousEvents.edges[0].node.image2,
+            image: data.allContentfulPreviousEvents.edges[0]?.node.image2,
             eventTitle:
-              data.allContentfulPreviousEvents.edges[0].node.eventTitle2,
+              data.allContentfulPreviousEvents.edges[0]?.node.eventTitle2,
             description:
-              data.allContentfulPreviousEvents.edges[0].node.description2,
+              data.allContentfulPreviousEvents.edges[0]?.node.description2,
           },
           {
-            image: data.allContentfulPreviousEvents.edges[0].node.image3,
+            image: data.allContentfulPreviousEvents.edges[0]?.node.image3,
             eventTitle:
-              data.allContentfulPreviousEvents.edges[0].node.eventTitle3,
+              data.allContentfulPreviousEvents.edges[0]?.node.eventTitle3,
             description:
-              data.allContentfulPreviousEvents.edges[0].node.description3,
+              data.allContentfulPreviousEvents.edges[0]?.node.description3,
           },
         ]}
       />
@@ -88,7 +89,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulPreviousEvents(filter: { title: { eq: "Previous Events" } }) {
+    allContentfulPreviousEvents(filter: { title: { eq: "Previous Events About Page" } }) {
       edges {
         node {
           eventTitle1
