@@ -138,7 +138,7 @@ export const Head = ({data}) => {
       description={description1.description1}
       schemaMarkup={schema}
     />
-    <link rel="canonical" href="https://greeceeventspc.com/" />
+    <link rel="canonical" href="https://puntacanaeventplanner.com/" />
     <meta
       name="google-site-verification"
       content="sN5dEuZZzj940eKwcVwd4RXMUzeZXQOqqHhjLXNFoHE"
